@@ -770,3 +770,52 @@ footer {
   box-shadow: 0 3px 6px rgba(0,0,0,0.08);
   font-size: 0.95rem;
 }
+/* Fixed Instagram Top Bar */
+.fixed-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #E4405F; /* Instagram color */
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  z-index: 2000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.fixed-top-bar a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fixed-top-bar svg {
+  flex-shrink: 0;
+}
+
+/* Push header/menu down so it’s not hidden */
+header {
+  margin-top: 40px; /* same as bar height */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .fixed-top-bar {
+    font-size: 0.85rem;
+    padding: 6px 8px;
+  }
+  .fixed-top-bar svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
