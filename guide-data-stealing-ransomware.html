@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Learn how modern malware steals data, enters through exploits or weak RDP, uses credential theft, encrypts files, threatens data publication, and demands ransom." />
+      <meta name="keywords" content="data stealing malware, ransomware extortion, weak RDP, exploit, credential theft, double extortion, data leak threat" />
+      <meta name="author" content="Fajar Anggiawan" />
+      <title>Data-Stealing Malware and Modern Ransomware Extortion - Aulap Software</title>
+      <link rel="canonical" href="https://aulap.my.id/guide-data-stealing-ransomware.html" />
+      <link rel="stylesheet" href="styles.css" />
+      <meta name="theme-color" content="#0F172A" />
+      <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+   </head>
+   <body class="legal-page article-page">
+      <div class="fixed-top-bar">
+         <a href="https://instagram.com/aulapsoftware" target="_blank" rel="noopener noreferrer"><span>Instagram: @aulapsoftware</span></a>
+      </div>
+      <div data-include="menu"></div>
+      <main class="legal-content container article-content">
+         <p class="updated-date">Security Guide · Updated 2026-05-24</p>
+         <h1>Data-Stealing Malware and Modern Ransomware Extortion</h1>
+         <p class="overview-text">Modern malware is not only about deleting files or slowing down a PC. Many incidents now involve stolen credentials, unauthorized access, data theft, encryption, and pressure to pay a ransom. This guide explains the risk in simple English.</p>
+      <section class="article-section">
+         <h2>The threat is bigger than encryption</h2>
+         <p>Many people think ransomware only encrypts files. That is no longer enough to describe many modern incidents. Attackers may steal sensitive data before encryption. They may threaten to publish files, contact customers, or expose business records. This is why good backups are important but not the only control.</p>
+      </section>
+      <section class="article-section">
+         <h2>Common entry points</h2>
+         <p>Attackers can enter through several paths. The most common paths are not always sophisticated.</p>
+         <ul>
+            <li>Phishing emails that steal passwords or deliver malicious attachments.</li>
+            <li>Weak Remote Desktop Protocol (RDP) passwords or exposed remote access services.</li>
+            <li>Unpatched VPN, firewall, server, website, or application vulnerabilities.</li>
+            <li>Compromised admin accounts with reused passwords.</li>
+            <li>Unsafe downloads, cracked software, fake updates, or malicious browser extensions.</li>
+            <li>Third-party access from vendors, contractors, or unmanaged IT tools.</li>
+         </ul>
+      </section>
+      <section class="article-section">
+         <h2>Credential theft comes first in many cases</h2>
+         <p>Before encrypting files, attackers often try to steal credentials. They may collect browser passwords, cookies, access tokens, VPN credentials, email passwords, or remote access logins. With valid credentials, an attacker can look like a normal user.</p>
+         <p>This is why password managers, multi-factor authentication, account review, and session revocation are important. If an info stealer is suspected, changing only the Windows password may not be enough.</p>
+      </section>
+      <section class="article-section">
+         <h2>Weak RDP and exposed remote access</h2>
+         <p>RDP is useful for remote administration, but exposed RDP with weak passwords is a serious risk. Attackers can try leaked passwords, password spraying, brute force, or stolen credentials. Once inside, they may disable security tools, copy data, and move to other systems.</p>
+         <p>RDP should not be exposed directly to the internet when avoidable. Use VPN, IP restrictions, MFA, strong passwords, account lockout, and monitoring.</p>
+      </section>
+      <section class="article-section">
+         <h2>Exploit-based access</h2>
+         <p>Some incidents start with vulnerabilities in public-facing systems such as websites, VPN appliances, remote management panels, or file transfer systems. If the system is not patched, attackers may gain access without needing a user to click anything.</p>
+         <p>This is why patch management and website security scanning matter. A small business website can become an entry point if it uses outdated plugins, weak admin credentials, or unsafe components.</p>
+      </section>
+      <section class="article-section">
+         <h2>Data theft and pressure tactics</h2>
+         <p>After gaining access, attackers may search for documents, customer records, financial files, identity documents, source code, contracts, or backups. They may compress and upload data before encryption. Later, they can use the stolen data as pressure.</p>
+         <p>The victim may receive threats such as “pay or we publish your data.” In some cases, attackers may contact customers, suppliers, or employees to increase pressure. This creates business, legal, and reputation risk.</p>
+      </section>
+      <section class="article-section">
+         <h2>Encryption is only one stage</h2>
+         <p>Encryption may happen after reconnaissance, credential theft, data collection, privilege escalation, and backup deletion attempts. If responders only restore files without understanding the entry point, attackers may return.</p>
+         <p>A proper response should check accounts, remote access, backups, endpoint behavior, server logs, website risk, and security hardening.</p>
+      </section>
+      <section class="article-section">
+         <h2>Risk reduction checklist</h2>
+         <p>These steps reduce the chance and impact of data-stealing malware and ransomware:</p>
+         <ul>
+            <li>Use MFA on email, remote access, cloud storage, and admin panels.</li>
+            <li>Avoid exposing RDP directly to the internet.</li>
+            <li>Patch Windows, servers, VPN tools, websites, plugins, and remote access software.</li>
+            <li>Keep offline or versioned backups and test restore procedures.</li>
+            <li>Use endpoint protection or EDR for business devices.</li>
+            <li>Review admin accounts and remove unused access.</li>
+            <li>Classify sensitive data and apply appropriate access control.</li>
+            <li>Monitor unusual logins, large file transfers, and unknown remote sessions.</li>
+         </ul>
+      </section>
+      <section class="article-section">
+         <h2>If your business is affected</h2>
+         <p>Do not rush to wipe everything immediately. Preserve useful evidence such as ransom notes, suspicious emails, timestamps, file names, login records, and screenshots. Isolate affected systems when safe. Reset passwords from a clean device. Review cloud sessions and remote access.</p>
+         <p>For business incidents, incident response helps identify what happened, what data may be affected, how to recover, and how to reduce repeat attacks.</p>
+      </section>
+      <hr>
+      <section class="article-section">
+         <h2>Related guides</h2>
+         <ul>
+            <li><a href="guide-ransomware-prevention.html">Ransomware prevention guide</a></li>
+            <li><a href="guide-sme-cybersecurity-checklist.html">Cybersecurity checklist for Indonesian SMEs</a></li>
+            <li><a href="guide-incident-response-indonesia.html">Incident response guide for small businesses</a></li>
+         </ul>
+      </section>
+      <section class="article-section article-sources">
+         <h2>Further reading</h2>
+         <ul>
+            <li><a href="https://www.cisa.gov/stopransomware/ransomware-guide" target="_blank" rel="noopener noreferrer">CISA StopRansomware Guide</a></li>
+            <li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/malware-phishing-and-ransomware" target="_blank" rel="noopener noreferrer">CISA: Malware, phishing, and ransomware</a></li>
+         </ul>
+      </section>
+         <div class="section-cta">
+            <a href="guides.html" class="btn btn-secondary">Back to Security Guides</a>
+         </div>
+      </main>
+      <div data-include="footer"></div>
+      <script src="script.js"></script>
+   </body>
+</html>

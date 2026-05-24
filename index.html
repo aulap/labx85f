@@ -1,293 +1,597 @@
 <!DOCTYPE html>
+
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Aulap Software - Lightweight security tools and expert cybersecurity services.">
-      <meta name="keywords" content="free antivirus, AulapG, BlokNet, antivirus gratis">
-      <meta name="author" content="Fajar Anggiawan">
-      <title>Aulap Software - Lightweight Security Tools for Windows</title>
-      <link rel="canonical" href="https://aulap.my.id/" />
-      <link rel="stylesheet" href="styles.css">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1590833242903467"
-         crossorigin="anonymous"></script>
-      <!-- Favicon and Icons -->
-      <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-      <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
-      <link rel="icon" type="image/png" sizes="64x64" href="assets/icons/favicon-64x64.png">
-      <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-      <link rel="manifest" href="assets/icons/site.webmanifest">
-      <meta name="theme-color" content="#FF7A00">
-   </head>
-   <body>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Aulap Software provides lightweight Windows antivirus, safe browsing software, responsible productivity tools, incident response Indonesia, website security scan, and cybersecurity consulting." name="description"/>
+<meta content="Aulap Software, AulapG, antivirus Indonesia, incident response Indonesia, website security scan, cybersecurity consulting Indonesia, Windows security tools, safe browsing software" name="keywords"/>
+<title>Aulap Software - Antivirus, Incident Response &amp; Cybersecurity Indonesia</title>
+<meta content="Fajar Anggiawan" name="author"/>
+<link href="https://aulap.my.id/" rel="canonical"/>
+<link href="styles.css" rel="stylesheet"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1590833242903467"></script>
+<!-- Favicon and Icons -->
+<link href="assets/icons/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="assets/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/icons/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="assets/icons/site.webmanifest" rel="manifest"/>
+<meta content="#0F172A" name="theme-color"/>
+<style>
+         /* Index-only premium hero redesign */
+         .hero-section {
+         min-height: auto;
+         overflow: hidden;
+         padding-top: clamp(54px, 6vw, 84px);
+         padding-bottom: clamp(62px, 7vw, 94px);
+         background:
+         radial-gradient(circle at 8% 12%, rgba(249, 115, 22, 0.10), transparent 32%),
+         radial-gradient(circle at 92% 10%, rgba(59, 130, 246, 0.10), transparent 34%);
+         }
+         .hero-grid {
+         grid-template-columns: minmax(0, 0.96fr) minmax(340px, 0.82fr);
+         gap: clamp(38px, 6vw, 82px);
+         align-items: center;
+         }
+         .hero-copy h1 {
+         max-width: 690px;
+         font-size: clamp(2.34rem, 4.5vw, 3.88rem);
+         line-height: 1.03;
+         letter-spacing: -0.056em;
+         }
+         .hero-lead {
+         max-width: 620px;
+         margin-top: 20px;
+         color: #475569;
+         font-size: clamp(1.02rem, 1.5vw, 1.14rem);
+         line-height: 1.76;
+         }
+         .hero-actions {
+         margin-top: 30px;
+         gap: 14px;
+         }
+         .hero-actions .btn {
+         min-height: 50px;
+         padding-inline: 24px;
+         }
+         .trust-row {
+         margin-top: 22px;
+         gap: 10px;
+         }
+         .trust-row span {
+         padding: 9px 14px;
+         color: #334155;
+         background: rgba(255,255,255,0.88);
+         border-color: rgba(226, 232, 240, 0.92);
+         box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+         }
+         .hero-visual {
+         min-height: 455px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 68px 34px 70px;
+         isolation: isolate;
+         }
+         .hero-visual::before {
+         width: min(82%, 410px);
+         border-radius: 38px;
+         transform: rotate(-5deg);
+         background:
+         linear-gradient(145deg, rgba(15, 23, 42, 0.98), rgba(30, 41, 59, 0.96));
+         box-shadow: 0 36px 76px rgba(15, 23, 42, 0.27);
+         }
+         .hero-orb-one {
+         width: 142px;
+         height: 142px;
+         right: 2%;
+         top: 12%;
+         background: rgba(251, 191, 36, 0.38);
+         }
+         .hero-orb-two {
+         width: 112px;
+         height: 112px;
+         left: 3%;
+         bottom: 10%;
+         background: rgba(147, 197, 253, 0.50);
+         }
+         .hero-product-panel {
+         position: relative;
+         z-index: 2;
+         width: min(86%, 390px);
+         padding: clamp(24px, 3.7vw, 32px);
+         border-radius: 32px;
+         background: linear-gradient(160deg, rgba(255,255,255,0.97), rgba(255,247,237,0.92));
+         border: 1px solid rgba(255,255,255,0.78);
+         box-shadow: 0 30px 64px rgba(15, 23, 42, 0.22);
+         text-align: left;
+         backdrop-filter: blur(14px);
+         -webkit-backdrop-filter: blur(14px);
+         }
+         .hero-panel-top {
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+         gap: 14px;
+         }
+         .hero-product-brand {
+         display: flex;
+         align-items: center;
+         gap: 14px;
+         min-width: 0;
+         }
+         .hero-product-brand img {
+         width: 56px;
+         height: 56px;
+         flex: 0 0 auto;
+         object-fit: contain;
+         filter: drop-shadow(0 12px 20px rgba(249, 115, 22, 0.22));
+         }
+         .hero-product-brand strong {
+         display: block;
+         color: #0f172a;
+         font-size: clamp(1.68rem, 3vw, 2.14rem);
+         line-height: 1;
+         letter-spacing: -0.055em;
+         }
+         .hero-product-brand span {
+         display: block;
+         margin-top: 7px;
+         color: #64748b;
+         font-weight: 800;
+         font-size: 0.88rem;
+         }
+         .hero-version-chip {
+         flex: 0 0 auto;
+         padding: 7px 10px;
+         border-radius: 999px;
+         color: #9a3412;
+         background: rgba(255, 237, 213, 0.90);
+         border: 1px solid rgba(251, 146, 60, 0.26);
+         font-size: 0.76rem;
+         font-weight: 900;
+         }
+         .hero-product-status {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
+         margin-top: 24px;
+         padding: 9px 13px;
+         color: #166534;
+         background: rgba(220, 252, 231, 0.84);
+         border: 1px solid rgba(34, 197, 94, 0.24);
+         border-radius: 999px;
+         font-size: 0.88rem;
+         font-weight: 850;
+         }
+         .status-dot {
+         width: 9px;
+         height: 9px;
+         border-radius: 999px;
+         background: #22c55e;
+         box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.13);
+         }
+         .hero-scan-card {
+         margin-top: 18px;
+         padding: 16px;
+         border-radius: 22px;
+         background: rgba(248, 250, 252, 0.78);
+         border: 1px solid rgba(226, 232, 240, 0.86);
+         }
+         .scan-row {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 14px;
+         color: #475569;
+         font-size: 0.84rem;
+         font-weight: 750;
+         }
+         .scan-row strong {
+         color: #0f172a;
+         font-size: 0.92rem;
+         }
+         .impact-bar {
+         height: 8px;
+         margin-top: 12px;
+         overflow: hidden;
+         border-radius: 999px;
+         background: #e2e8f0;
+         }
+         .impact-bar span {
+         display: block;
+         width: 28%;
+         height: 100%;
+         border-radius: inherit;
+         background: linear-gradient(90deg, #22c55e, #84cc16);
+         }
+         .hero-metrics {
+         display: grid;
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+         gap: 10px;
+         margin-top: 12px;
+         }
+         .hero-metrics span {
+         display: grid;
+         gap: 2px;
+         min-height: 58px;
+         padding: 11px 12px;
+         border-radius: 18px;
+         color: #64748b;
+         background: rgba(255,255,255,0.72);
+         border: 1px solid rgba(226, 232, 240, 0.88);
+         font-size: 0.78rem;
+         font-weight: 760;
+         }
+         .hero-metrics strong {
+         color: #0f172a;
+         font-size: 0.96rem;
+         letter-spacing: -0.03em;
+         }
+         .floating-card {
+         max-width: 178px;
+         padding: 10px 14px;
+         color: #111827;
+         background: rgba(255,255,255,0.94);
+         border-radius: 999px;
+         font-size: 0.82rem;
+         line-height: 1.25;
+         z-index: 3;
+         box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+         backdrop-filter: blur(10px);
+         -webkit-backdrop-filter: blur(10px);
+         }
+         .card-top {
+         top: 20px;
+         right: 28px;
+         }
+         .card-bottom {
+         left: 24px;
+         bottom: 22px;
+         }
+         .product-kicker {
+         display: inline-flex;
+         align-items: center;
+         width: fit-content;
+         margin-bottom: 10px;
+         padding: 6px 10px;
+         border-radius: 999px;
+         color: #c2410c;
+         background: rgba(255, 237, 213, 0.9);
+         border: 1px solid rgba(251, 146, 60, 0.28);
+         font-size: 0.78rem;
+         font-weight: 850;
+         letter-spacing: 0.01em;
+         }
+         #software .featured-product-card:first-of-type {
+         border-color: rgba(249, 115, 22, 0.22);
+         box-shadow: 0 24px 58px rgba(249, 115, 22, 0.1);
+         }
+         #software .featured-product-image {
+         background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,247,237,0.8));
+         }
+         .tool-product-card {
+         border-color: rgba(249, 115, 22, 0.18);
+         background: linear-gradient(160deg, rgba(255,255,255,0.96), rgba(255,247,237,0.58));
+         }
+         .tool-product-thumb {
+         width: min(100%, 112px);
+         height: 112px;
+         object-fit: contain;
+         align-self: flex-start;
+         margin-bottom: 14px;
+         filter: drop-shadow(0 14px 18px rgba(15, 23, 42, 0.15));
+         }
+         @media (max-width: 1024px) {
+         .hero-grid { grid-template-columns: 1fr; text-align: center; }
+         .hero-copy h1, .hero-lead { margin-left: auto; margin-right: auto; }
+         .hero-copy h1 { max-width: 680px; }
+         .hero-copy .eyebrow, .hero-actions, .trust-row { justify-content: center; margin-inline: auto; }
+         .hero-visual { min-height: 430px; }
+         .card-top { top: 18px; right: 12%; }
+         .card-bottom { left: 12%; bottom: 18px; }
+         }
+         @media (max-width: 760px) {
+         .hero-section { padding-top: 42px; padding-bottom: 56px; }
+         .hero-copy h1 { font-size: clamp(2.05rem, 9.4vw, 2.82rem); letter-spacing: -0.048em; }
+         .hero-lead { font-size: 1rem; line-height: 1.66; }
+         .hero-actions .btn { width: 100%; }
+          .trust-row {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .trust-row span {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 100%;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 1.25;
+  }
+         .hero-visual {
+         min-height: auto;
+         padding: 28px 12px 10px;
+         display: grid;
+         gap: 12px;
+         }
+         .hero-visual::before {
+         width: min(82%, 300px);
+         border-radius: 28px;
+         }
+         .hero-product-panel {
+         width: min(94%, 332px);
+         border-radius: 28px;
+         padding: 22px;
+         }
+         .hero-panel-top { align-items: center; }
+         .hero-product-brand img { width: 50px; height: 50px; }
+         .hero-product-brand strong { font-size: 1.62rem; }
+         .hero-version-chip { display: none; }
+         .hero-metrics { grid-template-columns: 1fr; }
+         .floating-card {
+         position: relative;
+         inset: auto;
+         justify-self: center;
+         max-width: 260px;
+         padding: 9px 13px;
+         font-size: 0.82rem;
+         }
+         .card-top { order: 2; }
+         .card-bottom { order: 3; }
+         }
+      </style>
+</head>
+<body>
 <!-- Instagram Fixed Top Bar -->
 <div class="fixed-top-bar">
-  <a href="https://instagram.com/aulapsoftware" target="_blank" rel="noopener noreferrer">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 .001 7.001A3.5 3.5 0 0 0 12 8.5zM17.75 6.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-    </svg>
-    <span>Stay updated! Follow us on Instagram now!</span>
-  </a>
+<a href="https://instagram.com/aulapsoftware" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 .001 7.001A3.5 3.5 0 0 0 12 8.5zM17.75 6.25a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+</svg>
+<span>
+Stay updated! Follow us on Instagram now!</span>
+</a>
 </div>
-   
-      <!-- Header and Navigation -->
-      <header>
-         <nav>
-            <ul>
-               <li><a href="#home">🏠 Home</a></li>
-               <li><a href="#tools">⬇️ Tools</a></li>
-               <li><a href="#services">🛡️ Services</a></li>
-               <li><a href="#purchase-section">💳 Purchase</a></li>
-               <li><a href="#contact">✉️ Contact</a></li>
-               <li><a href="https://indothreat.blogspot.com/" target="_blank">📝 Blog</a></li>
-               <li><a href="#about">ℹ️ About</a></li>
-            </ul>
-         </nav>
-      </header>
-     
-      <!-- Home Section -->
-      <section id="home">
-         <div class="container">
-            <h1>🏠 Welcome to Aulap Software</h1>
-            <p>Lightweight Security Tools for Windows that are fast, reliable, and easy to use.</p>
-         </div>
-      </section>
-      <!-- Featured Product Section -->
-      <section id="featured-product">
-         <div class="container">
-            <h2>⭐ Featured Product</h2>
-            <p>Discover our best-performing security solution:</p>
-            <div class="featured-product-card section-card">
-               <img src="AulapG_box.png" alt="AulapG" class="featured-product-image" loading="lazy"/>
-               <div class="product-info">
-                  <h3>
-                     <!-- <img src="garuda.png" alt="AulapG Icon" style="width:48px; height:48px; vertical-align:middle; margin-right:8px;">-->
-                     AulapG
-                  </h3>
-                  <p class="product-description">Protects your PC from malware, ransomware, and emerging threats with minimal system impact and a simple interface.</p>
-                  <a href="AulapG.html" class="learn-more">Learn More</a>
-               </div>
-            </div>
-            <p>
-            <div class="featured-product-card section-card">
-               <img src="BlokNet_box.png" alt="BlokNet" class="featured-product-image" loading="lazy"/>
-               <div class="product-info">
-                  <h3>
-                     BlokNet
-                  </h3>
-                  <p class="product-description">Keep your computer safe and family‑friendly by blocking adult content and inappropriate websites in real time — even when users try to bypass protection with VPNs.</p>
-                  <a href="BlokNet.html" class="learn-more">Learn More</a>
-               </div>
-            </div>
-            <p>
-            <div class="featured-product-card section-card">
-               <img src="FWBS_box.png" alt="Free WhatsApp Bulk Sender" class="featured-product-image" loading="lazy"/>
-               <div class="product-info">
-                  <h3>
-                     Free WhatsApp Bulk Sender
-                  </h3>
-                  <p class="product-description">Save time and money while promoting your business on WhatsApp Desktop. Send bulk marketing messages safely, easily, and effectively.</p>
-                  <a href="FreeWhatsAppBulkSender.html" class="learn-more">Learn More</a>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Tools Section -->
-      <section id="tools">
-         <div class="container">
-            <h2>🛠️ Our Tools</h2>
-            <p>Download our lightweight software solutions designed to keep your devices secure, optimized, and efficient. Easily access all tools below:</p>
-            <!-- Toggle Button -->
-            <button id="toggle-tools-btn" class="toggle-btn">🛠️ Show Tools</button>
-            <!-- Tool Grid (Hidden by default) -->
-            <div class="tool-list-grid" style="display: none; margin-top: 20px;">
-               <div class="tool-card">
-                  <h3>SAILUMAN</h3>
-                  <p>Unleash invisible AI intelligence during meetings with professional-grade stealth. Vanish from screen captures and taskbar effortlessly, securing your assistant with a single click.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1zy1UuqM6GiziCfVghtMzf5jGCMh5WCfW" class="download-btn">Download</a>
-               </div>                
-               <div class="tool-card">
-                  <h3>NetArmor</h3>
-                  <p>Harden Windows security against hackers and threats with professional-grade protection. Block remote access and malicious scripts effortlessly, securing your fortress with a single click.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1n9NepFRyenYH7chRdV7Gucp0ys9lGtvG" class="download-btn">Download</a>
-               </div>            
-               <div class="tool-card">
-                  <h3>Free WhatsApp Bulk Sender</h3>
-                  <p>Send bulk messages safely through WhatsApp Desktop without costly APIs. Automate marketing messages efficiently, perfect for small businesses and community groups.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1HF3c3ED3kUMDtiPXKZldJO_EGqr_ci7y" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>BlokNet</h3>
-                  <p>A safe browsing tool that quickly blocks adult and porn sites, still detecting sites accessed via VPN, helping parents protect kids online with fast and easy website restriction using BlokNet.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1Lqf-gLh1E7_ClJssR6PPByvrUhUgUx39" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>PanicMode</h3>
-                  <p>An emergency process termination tool that quickly stops recently started suspicious or malicious processes on Windows, providing fast and reliable threat containment.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1J0VcAg9pMV3btJbt6jiw2HtgFxidvcSw" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>AulapG</h3>
-                  <p>AulapG is a lightweight, modern antivirus solution offering advanced threat detection and proactive prevention with minimal system impact. Built for speed, reliability, and simplicity.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>UnplugAlert</h3>
-                  <p>Monitors your device’s charging status and reacts instantly with alarm, screen lock, and Telegram alerts, helping secure your laptop in public spaces or offices.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1xQK7CS5d_ytlQOkXmUKOyHMBKu6KiEgV" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>ShadowEncrypt</h3>
-                  <p>Secure and encrypt files instantly without triggering DLP alerts. Ideal for corporate environments where standard encryption tools raise alerts or get quarantined.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1uMnDQAugeOU3q1m1LNivpLpvUTn5ZPly" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>ServiceMonitor</h3>
-                  <p>Monitors and restarts critical services, supports scripts, logs activity, and sends Telegram alerts. Simple automated checks for administrators without complex setup.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1W-mI3vZDVxNmMr824JAphSSajNhH2-U6" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>DisplayGuard</h3>
-                  <p>Enhance privacy during screen sharing or presentations. Hide specific windows while keeping apps running in the background, perfect for video conferences.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1RN9oveHCpsC4uUEa6Fmx5DDERKFbw2SA" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>LockPixEncryptor</h3>
-                  <p>Securely share private images with encryption, compression, and watermarking. Prevents unauthorized copying, saving, or screen captures, viewable only in a secure viewer.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1ekz9JzmdQ5WvIHnHI77EgvwRhQPnW8nU" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>AutoScreenOff</h3>
-                  <p>Automatically locks your computer and turns off the screen after inactivity. Runs in the system tray with configurable timers to save energy and enhance security.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1rZ9T6qjuHuCs6hCGvsQS78EJaqRhOyKg" class="download-btn">Download</a>
-               </div>
-               <div class="tool-card">
-                  <h3>ScriptBlocker</h3>
-                  <p>Protects your PC from harmful scripts by blocking dangerous executors like wscript.exe and powershell.exe. Simple clicks prevent malicious scripts from running.</p>
-                  <a href="https://drive.google.com/uc?export=download&id=1S69isOFlYj3ScpgOlKv4ZTpKr6sDGQuX" class="download-btn">Download</a>
-               </div>
-            </div>
-         </div>
-      </section>
-
+<div data-include="menu"></div>
+<!-- Home Section -->
+<section class="hero-section" id="home">
+<div class="container hero-grid">
+<div class="hero-copy">
+<p class="eyebrow">AulapG Antivirus for Windows</p>
+<h1>Antivirus protection that stays light on your PC.</h1>
+<p class="hero-lead">AulapG keeps everyday Windows use smooth while helping detect suspicious activity, virus infections, and common malware without complicated setup.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://drive.google.com/uc?export=download&amp;id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_">Download AulapG</a>
+<a class="btn btn-secondary" href="AulapG.html">View Details</a>
+</div>
+<div aria-label="Key strengths" class="trust-row">
+<span>Low Resource Usage</span>
+<span>Ransomware Activity Detection</span>
+<span>PE Virus Detection</span>
+</div>
+</div>
+<div aria-label="AulapG lightweight antivirus preview" class="hero-visual">
+<div class="hero-orb hero-orb-one"></div>
+<div class="hero-orb hero-orb-two"></div>
+<div class="hero-product-panel">
+<div class="hero-panel-top">
+<div class="hero-product-brand">
+<img alt="" aria-hidden="true" loading="eager" src="garuda.png"/>
+<div>
+<strong>AulapG</strong>
+<span>Lightweight Antivirus</span>
+</div>
+</div>
+<span class="hero-version-chip">Windows</span>
+</div>
+<div class="hero-product-status">
+<span aria-hidden="true" class="status-dot"></span>
+<span>Protected &amp; ready</span>
+</div>
+<div aria-label="AulapG performance preview" class="hero-scan-card">
+<div class="scan-row">
+<span>System impact</span>
+<strong>Low</strong>
+</div>
+<div aria-hidden="true" class="impact-bar"><span></span></div>
+</div>
+<div aria-label="AulapG highlights" class="hero-metrics">
+<span><strong>Daily Threat</strong> Updates</span>
+<span><strong>Set &amp; Forget</strong> Mode</span>
+</div>
+</div>
+<div class="floating-card card-top">Background Protection</div>
+<div class="floating-card card-bottom">Behavior Watch</div>
+</div>
+</div>
+</section>
+<!-- Featured Software Section -->
+<section id="software">
+<div class="container">
+<h2>Software</h2>
+<p>Browse Aulap Software products and lightweight utilities for Windows security, safe browsing, productivity, automation, and daily digital workflows.</p>
+<div class="featured-product-card section-card">
+<img alt="BlokNet software box" class="featured-product-image" loading="lazy" src="BlokNet_box.png">
+<div class="product-info">
+<span class="product-kicker">Safe browsing</span>
+<h3>BlokNet</h3>
+<p class="product-description">Blocks adult content and inappropriate websites on family, office, and shared Windows devices — even when accessed through a VPN.</p>
+<a class="learn-more" href="BlokNet.html">View Product Details</a>
+</div>
+</div>
+<div class="featured-product-card section-card">
+<img alt="Free WhatsApp Bulk Sender software box" class="featured-product-image" loading="lazy" src="FWBS_box.png"/>
+<div class="product-info">
+<span class="product-kicker">Business productivity</span>
+<h3>Free WhatsApp Bulk Sender</h3>
+<p class="product-description">Send WhatsApp Desktop messages more efficiently for small business promotions, customer outreach, community updates, and daily broadcast workflows.</p>
+<a class="learn-more" href="FreeWhatsAppBulkSender.html">View Product Details</a>
+</div>
+</div>
+<p class="small-note">Use Aulap Software only for legitimate, authorized purposes. See <a href="download-safety.html">Download Safety</a> before installing.</p>
+<button class="toggle-btn" id="toggle-tools-btn">Show All Software</button>
+<div class="tool-list-grid" style="display: none; margin-top: 24px;">
+<div class="tool-card tool-product-card">
+<h3>AulapG</h3>
+<p>Lightweight Windows antivirus with low resource usage, ransomware activity detection, and PE virus detection for everyday protection.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_">Download</a>
+</div>
+<div class="tool-card tool-product-card">
+<h3>BlokNet</h3>
+<p>Filter inappropriate websites on shared Windows devices for family, school, or office use, including access attempts through VPN or proxy connections.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1Lqf-gLh1E7_ClJssR6PPByvrUhUgUx39">Download</a>
+</div>
+<div class="tool-card tool-product-card">
+<h3>Free WhatsApp Bulk Sender</h3>
+<p>Send WhatsApp Desktop messages more efficiently for small business promotions, customer outreach, and community updates.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1HF3c3ED3kUMDtiPXKZldJO_EGqr_ci7y">Download</a>
+</div>
+<div class="tool-card">
+<h3>SAILUMAN</h3>
+<p>AI meeting productivity utility for personal workflows, notes, and focused work sessions. Designed for legitimate productivity use during meetings and presentations.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1zy1UuqM6GiziCfVghtMzf5jGCMh5WCfW">Download</a>
+</div>
+<div class="tool-card">
+<h3>NetArmor</h3>
+<p>Windows hardening utility that helps review common security settings, reduce risky configurations, and improve defensive posture with clear controls.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1n9NepFRyenYH7chRdV7Gucp0ys9lGtvG">Download</a>
+</div>
+<div class="tool-card">
+<h3>PanicMode</h3>
+<p>An emergency process termination tool that quickly stops recently started suspicious or malicious processes on Windows, providing fast and reliable threat containment.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1J0VcAg9pMV3btJbt6jiw2HtgFxidvcSw">Download</a>
+</div>
+<div class="tool-card">
+<h3>UnplugAlert</h3>
+<p>Monitors your device’s charging status and reacts instantly with alarm, screen lock, and Telegram alerts, helping secure your laptop in public spaces or offices.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1xQK7CS5d_ytlQOkXmUKOyHMBKu6KiEgV">Download</a>
+</div>
+<div class="tool-card">
+<h3>ShadowEncrypt</h3>
+<p>File protection utility for encrypting personal or authorized business files. Use only on data you own or are permitted to protect under your organization policies.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1uMnDQAugeOU3q1m1LNivpLpvUTn5ZPly">Download</a>
+</div>
+<div class="tool-card">
+<h3>ServiceMonitor</h3>
+<p>Monitors and restarts critical services, supports scripts, logs activity, and sends Telegram alerts. Simple automated checks for administrators without complex setup.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1W-mI3vZDVxNmMr824JAphSSajNhH2-U6">Download</a>
+</div>
+<div class="tool-card">
+<h3>DisplayGuard</h3>
+<p>Presentation privacy utility that helps manage what is visible during screen sharing, demos, and video conferences.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1RN9oveHCpsC4uUEa6Fmx5DDERKFbw2SA">Download</a>
+</div>
+<div class="tool-card">
+<h3>LockPixEncryptor</h3>
+<p>Secure image sharing utility with encryption, compression, and watermarking for authorized personal or business sharing workflows.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1ekz9JzmdQ5WvIHnHI77EgvwRhQPnW8nU">Download</a>
+</div>
+<div class="tool-card">
+<h3>AutoScreenOff</h3>
+<p>Automatically locks your computer and turns off the screen after inactivity. Runs in the system tray with configurable timers to save energy and enhance security.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1rZ9T6qjuHuCs6hCGvsQS78EJaqRhOyKg">Download</a>
+</div>
+<div class="tool-card">
+<h3>ScriptBlocker</h3>
+<p>Helps reduce script-based risk on Windows by restricting common script execution paths and giving users simple defensive controls.</p>
+<a class="download-btn" href="https://drive.google.com/uc?export=download&amp;id=1S69isOFlYj3ScpgOlKv4ZTpKr6sDGQuX">Download</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Tools Section -->
 
 <!-- Services Section -->
 <section id="services">
-   <div class="container">
-      <h2>Layanan Keamanan Digital</h2>
-      <p>
-         Kami membantu individu dan UMKM menangani insiden peretasan,
-         memperkuat sistem keamanan, serta mengelola risiko digital secara berkelanjutan.
-      </p>
-      
-      <div class="services-container">
-
-         <div class="service-item section-card">
-            <h3>🚨 Incident Response & Recovery</h3>
-            <p>
-               Penanganan cepat untuk akun atau perangkat yang diretas.
-               Termasuk pengamanan akses, analisis sumber serangan,
-               pembersihan ancaman, serta penguatan ulang sistem
-               agar kejadian tidak terulang.
+<div class="container">
+<h2>Incident Response Indonesia</h2>
+<p>
+               Layanan keamanan digital untuk individu, UMKM, dan bisnis di Indonesia.
+               Kami membantu menangani insiden keamanan pada PC, laptop, server, dan website,
+               melakukan pemeriksaan keamanan, remediasi, hardening, serta memberikan pendampingan
+               dalam perencanaan dan implementasi solusi cybersecurity.
             </p>
-         </div>
-
-         <div class="service-item section-card">
-            <h3>🔐 Security Audit & Hardening</h3>
-            <p>
-               Pemeriksaan menyeluruh terhadap email, perangkat,
-               dan struktur akses akun bisnis, dilanjutkan dengan
-               implementasi pengamanan seperti pengaturan password manager,
-               aktivasi 2FA, pengamanan email, dan sistem backup.
-            </p>
-         </div>
-
-         <div class="service-item section-card">
-            <h3>📈 Ongoing Security Advisory for SMEs</h3>
-            <p>
-               Pendampingan keamanan berkelanjutan bagi pemilik usaha
-               yang membutuhkan arahan strategis tanpa membangun
-               tim keamanan internal. Termasuk konsultasi rutin,
-               evaluasi risiko, dan panduan sebelum implementasi sistem baru.
-            </p>
-         </div>
-
-      </div>
-   </div>
+<div class="services-container">
+<div class="service-item section-card">
+<h3>Incident Response &amp; System Checkup</h3>
+<p>
+                     Penanganan awal untuk PC, laptop, atau server yang dicurigai terinfeksi malware,
+                     diretas, berjalan tidak normal, atau menunjukkan indikasi aktivitas mencurigakan.
+                     Pemeriksaan mencakup kondisi sistem, koneksi jaringan, konfigurasi keamanan,
+                     serta langkah remediasi dan hardening agar perangkat lebih aman digunakan kembali.
+                  </p>
+</div>
+<div class="service-item section-card">
+<h3>Website Security Scan</h3>
+<p>
+                     Pemeriksaan keamanan website untuk menemukan potensi celah seperti konfigurasi lemah,
+                     komponen usang, risiko keamanan aplikasi web, dan exposure yang dapat dimanfaatkan
+                     pihak tidak bertanggung jawab. Hasil pemeriksaan dilengkapi rekomendasi perbaikan
+                     yang praktis dan mudah dipahami.
+                  </p>
+</div>
+<div class="service-item section-card">
+<h3>Cybersecurity Consulting &amp; Implementation</h3>
+<p>
+                     Pendampingan untuk organisasi yang ingin menerapkan solusi keamanan seperti DLP,
+                     EDR, endpoint protection, email security, backup strategy, dan kontrol keamanan lainnya.
+                     Kami dapat membantu assessment data sensitif, klasifikasi data, perencanaan policy,
+                     serta rekomendasi implementasi agar solusi keamanan berjalan sesuai kebutuhan bisnis.
+                  </p>
+</div>
+</div>
+</div>
 </section>
+<section id="security-guides">
+<div class="container">
+<h2>Security Guides</h2>
+<p>Evergreen cybersecurity guides for Windows users, families, UMKM, and small businesses in Indonesia.</p>
+<div class="resource-grid">
+<article class="resource-card">
+<h3>How to Know If Your PC Has Malware</h3>
+<p>Learn common warning signs such as suspicious startup behavior, browser redirects, slow performance, and unusual network activity.</p>
+<a href="guide-malware-signs.html">Read guide</a>
+</article>
+<article class="resource-card">
+<h3>Ransomware Prevention Guide</h3>
+<p>Practical steps to reduce ransomware risk with safe downloads, backups, updates, account protection, and remote access hygiene.</p>
+<a href="guide-ransomware-prevention.html">Read guide</a>
+</article>
+<article class="resource-card">
+<h3>Cybersecurity Checklist for Indonesian SMEs</h3>
+<p>A practical checklist for devices, email accounts, backups, website security, data classification, DLP, EDR, and incident response readiness.</p>
+<a href="guide-sme-cybersecurity-checklist.html">Read guide</a>
+</article>
+</div>
+<div class="section-cta"><a class="btn btn-secondary" href="guides.html">View All Security Guides</a></div>
+</div>
+</section>
+<!-- Purchase Section -->
 
-
-      <!-- Purchase Section -->
-      <section id="purchase-section">
-         <div class="container">
-            <h2>💳 Purchase</h2>
-            <p>Select your preferred payment method to complete your purchase.</p>
-            <button class="purchase-btn" id="purchase-btn">Buy Now</button>
-            <div id="payment-modal" class="payment-modal">
-               <div class="modal-content">
-                  <span class="close-btn" id="close-btn">&times;</span>
-                  <h3>💳 Choose Payment Method</h3>
-                  <div class="payment-options">
-                     <div class="payment-option">
-                        <h4>📱 Pay with QR Code</h4>
-                        <img src="qr.png" alt="QR Code" class="qr-image">
-                     </div>
-                     <div class="payment-option">
-                        <h4>💻 Pay with PayPal</h4>
-                        <a href="https://www.paypal.com/paypalme/aulapsoftware" target="_blank">
-                        <button class="paypal-btn">Pay with PayPal</button>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact">
-    <div class="container">
-        <h2>✉️ Contact Us</h2>
-        <p>We value your feedback, questions, and suggestions. Whether you need technical support, have a business inquiry, or simply want to share your thoughts, we’re here to help. Reach out via WhatsApp or email:</p>
-        <div class="contact-buttons" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
-            <!-- WhatsApp -->
-            <a href="https://wa.me/6285885208446?text=Hello%2C%20I%20have%20a%20question." 
-               target="_blank" 
-               class="contact-btn"
-               style="display: flex; align-items: center; padding: 10px 20px; background-color: #25D366; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                     alt="WhatsApp" style="width:24px; height:24px; margin-right: 10px;">
-                <span>Send Message via WhatsApp</span>
-            </a>
-            <!-- Email -->
-            <a href="mailto:aulapmyid@gmail.com" 
-               class="contact-btn"
-               style="display: flex; align-items: center; padding: 10px 20px; background-color: #0072C6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
-                📧 <span style="margin-left: 10px;">Send Email</span>
-            </a>
-        </div>
-    </div>
+<div class="container">
+<h2>Contact Aulap Software</h2>
+<p>Need product support, licensing information, or cybersecurity assistance in Indonesia? Contact us via WhatsApp or email.</p>
+<div class="contact-buttons" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+<!-- WhatsApp -->
+<a class="contact-btn" href="https://wa.me/6285885208446?text=Hello%2C%20I%20have%20a%20question." style="display: flex; align-items: center; padding: 10px 20px; background-color: #25D366; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;" target="_blank">
+<img alt="WhatsApp" src="WhatsApp.svg" style="width:24px; height:24px; margin-right: 10px;"/>
+<span>Send Message via WhatsApp</span>
+</a>
+<!-- Email -->
+<a class="contact-btn" href="mailto:aulapmyid@gmail.com" style="display: flex; align-items: center; padding: 10px 20px; background-color: #0072C6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600;">
+               📧 <span style="margin-left: 10px;">Send Email</span>
+</a>
+</div>
+</div>
 </section>
+<!-- About Section -->
 
-      <!-- About Section -->
-      <section id="about">
-         <div class="container">
-            <h2>
-               <img src="id.png" alt="Indonesian Flag" 
-                  style="width:24px; height:auto; vertical-align:middle; margin-right:8px;" loading="lazy">
-               About Us
-            </h2>
-            <p>We focus on earning your trust by delivering honest, budget‑friendly products and services without compromising quality. Based in Indonesia, our mission is to provide reliable, easy‑to‑use tools that help individuals and businesses stay secure and productive. Every product we create is built with transparency, integrity, and a commitment to customer satisfaction.</p>
-
-         </div>
-      </section>
-      <!-- Footer -->
-      <footer>
-         <p>&copy; 2025 - 2026 Aulap Software by Fajar Anggiawan |
-            <a href="/privacy-terms.html">Privacy Policy & Terms of Service</a>
-         </p>
-      </footer>
-      <script src="script.js"></script>
-   </body>
+<div data-include="footer"></div>
+<script src="script.js"></script>
+</body>
 </html>

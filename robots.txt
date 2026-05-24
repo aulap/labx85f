@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aulap.my.id/sitemap.xml

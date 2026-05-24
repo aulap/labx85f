@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PAD>
+  <Program_Info>
+    <Program_Name>AulapG</Program_Name>
+    <Program_Version>1.0.0.5</Program_Version>
+    <Program_Release_Month>09</Program_Release_Month>
+    <Program_Release_Day>07</Program_Release_Day>
+    <Program_Release_Year>2025</Program_Release_Year>
+    <Program_Cost_Dollars>0</Program_Cost_Dollars>
+    <Program_Type>Freeware</Program_Type>
+    <Program_Description_Primary>Protects your PC from malware, ransomware, and emerging threats with minimal system impact and a simple interface.</Program_Description_Primary>
+    <Program_Description_Detailed>AulapG delivers powerful yet lightweight antivirus and endpoint protection, ensuring continuous, proactive defense against modern threats. It is capable of detecting and blocking fileless attacks, including malicious PowerShell scripts, LNK shortcut exploits, and ransomware delivery techniques. With AI-driven detection, seamless automatic updates, and advanced scanning capabilities, AulapG offers comprehensive security — all within an intuitive, user-friendly interface.</Program_Description_Detailed>
+    <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+    <Program_OS_Support>Windows 10/11 64 bit</Program_OS_Support>
+    <Program_Language>English</Program_Language>
+    <Program_Requirements>2 GB RAM, 50 MB disk space</Program_Requirements>
+  </Program_Info>
+
+  <Publisher_Info>
+    <Company_Name>Aulap Software</Company_Name>
+    <Company_WebSite_URL>https://aulap.my.id/</Company_WebSite_URL>
+    <Contact_Email>aulapmyid@gmail.com</Contact_Email>
+  </Publisher_Info>
+
+  <Download_Info>
+    <Download_URL_Primary>https://drive.google.com/uc?export=download&amp;id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_</Download_URL_Primary>
+
+  </Download_Info>
+</PAD>

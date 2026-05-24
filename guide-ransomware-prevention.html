@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Simple ransomware prevention guide for Windows users covering backups, phishing, updates, RDP risk, account protection, safe downloads, and incident response readiness." />
+      <meta name="keywords" content="ransomware prevention, Windows ransomware, backup strategy, RDP security, phishing protection, ransomware guide" />
+      <meta name="author" content="Fajar Anggiawan" />
+      <title>Ransomware Prevention Guide for Windows Users - Aulap Software</title>
+      <link rel="canonical" href="https://aulap.my.id/guide-ransomware-prevention.html" />
+      <link rel="stylesheet" href="styles.css" />
+      <meta name="theme-color" content="#0F172A" />
+      <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+   </head>
+   <body class="legal-page article-page">
+      <div class="fixed-top-bar">
+         <a href="https://instagram.com/aulapsoftware" target="_blank" rel="noopener noreferrer"><span>Instagram: @aulapsoftware</span></a>
+      </div>
+      <div data-include="menu"></div>
+      <main class="legal-content container article-content">
+         <p class="updated-date">Security Guide · Updated 2026-05-24</p>
+         <h1>Ransomware Prevention Guide for Windows Users</h1>
+         <p class="overview-text">Ransomware is not only a technical problem. It is a business and personal risk. Modern ransomware can encrypt files, steal data, pressure victims, and disrupt daily work. This guide explains practical prevention steps for Windows users and small teams.</p>
+      <section class="article-section">
+         <h2>What ransomware does</h2>
+         <p>Ransomware is malware that blocks access to data or systems until the victim pays a ransom. Traditional ransomware focuses on encryption. Modern ransomware may also steal files first and threaten to publish them. This is often called double extortion.</p>
+         <p>For home users, the damage may include lost photos, school files, and personal documents. For businesses, the damage may include downtime, customer data exposure, legal risk, and damaged trust.</p>
+      </section>
+      <section class="article-section">
+         <h2>1. Keep backups that ransomware cannot easily reach</h2>
+         <p>Backups are the most important ransomware control. A backup is only useful if it can survive the attack. If backup storage is always connected to the infected PC, ransomware may encrypt the backup too.</p>
+         <p>Use a mix of cloud backup, offline backup, and version history. For business use, test restore procedures. A backup that has never been tested is only a hope, not a plan.</p>
+      </section>
+      <section class="article-section">
+         <h2>2. Patch Windows and applications</h2>
+         <p>Ransomware operators often enter through known vulnerabilities in operating systems, VPN appliances, remote access tools, web applications, or outdated software. Patching reduces the number of easy entry points.</p>
+         <p>Do not focus only on Windows Update. Browsers, Office, PDF readers, remote desktop tools, backup software, and server applications also need updates.</p>
+      </section>
+      <section class="article-section">
+         <h2>3. Be careful with email attachments and links</h2>
+         <p>Phishing remains a common initial access method. Fake invoices, delivery notices, payment requests, job documents, and compressed files can carry malicious payloads or lead to credential theft.</p>
+         <p>Train users to check sender addresses, file types, link destinations, and unexpected urgency. If a message asks for immediate payment, password reset, or macro activation, verify through another channel.</p>
+      </section>
+      <section class="article-section">
+         <h2>4. Secure RDP and remote access</h2>
+         <p>Weak Remote Desktop Protocol (RDP), exposed admin panels, reused passwords, and missing multi-factor authentication create serious risk. Attackers often search the internet for exposed services, try leaked passwords, and then move deeper into the network.</p>
+         <p>Avoid exposing RDP directly to the internet. Use VPN, IP restrictions, multi-factor authentication, strong passwords, account lockout, and monitoring where possible.</p>
+      </section>
+      <section class="article-section">
+         <h2>5. Limit administrator rights</h2>
+         <p>Many infections become worse because daily users run as local administrators. If malware runs with admin rights, it may disable protection, change system settings, stop services, or access more files.</p>
+         <p>Use standard user accounts for daily work. Keep administrator access only for installation and maintenance. For small businesses, separate owner accounts, staff accounts, and admin accounts.</p>
+      </section>
+      <section class="article-section">
+         <h2>6. Protect accounts, not just devices</h2>
+         <p>Ransomware incidents often start with stolen credentials. Email accounts, cloud storage, remote access accounts, and admin panels should use strong passwords and multi-factor authentication.</p>
+         <p>Use a password manager to avoid password reuse. Review recovery emails and phone numbers. Remove old accounts that no longer need access.</p>
+      </section>
+      <section class="article-section">
+         <h2>7. Use layered security</h2>
+         <p>No single tool can stop every ransomware attack. A safer setup combines updated software, antivirus or endpoint protection, browser protection, email filtering, backup, least privilege, logging, and user awareness.</p>
+         <p>For businesses, consider endpoint detection and response, central logging, access review, and regular security checkups. These controls help detect suspicious behavior before encryption becomes widespread.</p>
+      </section>
+      <section class="article-section">
+         <h2>8. Prepare an incident response plan</h2>
+         <p>A simple incident response plan helps people act calmly. Define who to contact, which devices to isolate, where backups are stored, which accounts must be reset, and how to communicate with customers or staff.</p>
+         <p>Do not wait until files are encrypted. Write the plan before you need it.</p>
+      </section>
+      <section class="article-section">
+         <h2>Ransomware warning signs</h2>
+         <p>Early warning signs are not always obvious, but these should be taken seriously:</p>
+         <ul>
+            <li>Sudden file extension changes or files that cannot be opened.</li>
+            <li>Ransom notes appearing in folders or on the desktop.</li>
+            <li>Security tools being disabled unexpectedly.</li>
+            <li>Large numbers of files modified in a short time.</li>
+            <li>Unknown remote access sessions or admin logins.</li>
+            <li>Unusual data upload activity before encryption.</li>
+            <li>Backup jobs failing or backup files being deleted.</li>
+         </ul>
+      </section>
+      <section class="article-section">
+         <h2>If ransomware is suspected</h2>
+         <p>Disconnect affected devices from the network when safe to do so. Do not delete ransom notes, logs, or suspicious files immediately because they may help investigation. Do not rush to reinstall every system before understanding the entry point. If the root cause remains, the same incident can happen again.</p>
+         <p>For business systems, get help quickly. Proper incident response focuses on containment, evidence, recovery, account security, and hardening.</p>
+      </section>
+      <hr>
+      <section class="article-section">
+         <h2>Related guides</h2>
+         <ul>
+            <li><a href="guide-malware-signs.html">How to know if your PC has malware</a></li>
+            <li><a href="guide-data-stealing-ransomware.html">Modern data theft and extortion attacks</a></li>
+            <li><a href="guide-sme-cybersecurity-checklist.html">Cybersecurity checklist for Indonesian SMEs</a></li>
+         </ul>
+      </section>
+      <section class="article-section article-sources">
+         <h2>Further reading</h2>
+         <ul>
+            <li><a href="https://www.cisa.gov/stopransomware/ransomware-guide" target="_blank" rel="noopener noreferrer">CISA StopRansomware Guide</a></li>
+            <li><a href="https://www.cisa.gov/topics/cyber-threats-and-advisories/malware-phishing-and-ransomware" target="_blank" rel="noopener noreferrer">CISA: Malware, phishing, and ransomware</a></li>
+         </ul>
+      </section>
+         <div class="section-cta">
+            <a href="guides.html" class="btn btn-secondary">Back to Security Guides</a>
+         </div>
+      </main>
+      <div data-include="footer"></div>
+      <script src="script.js"></script>
+   </body>
+</html>
