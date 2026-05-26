@@ -427,15 +427,21 @@ p { color: var(--muted); font-size: clamp(1rem, 1.7vw, 1.12rem); margin: 0 auto 
   gap: 22px !important;
   margin-top: 28px;
 }
-.screenshots-container img {
-  width: 100% !important;
-  max-width: none !important;
-  height: auto !important;
-  border-radius: var(--radius-md) !important;
-  border: 1px solid var(--line);
-  background: #fff;
-  box-shadow: var(--shadow-sm);
-}
+  .screenshots-container img {
+    width: 300px;
+    border-radius: 10px;
+    loading: lazy;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: zoom-in;
+    position: relative;
+    z-index: 1;
+  }
+
+  .screenshots-container img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+  }
 
 .pricing-container {
   grid-template-columns: repeat(3, minmax(0, 1fr));
