@@ -1,4 +1,10 @@
 (function () {
+  const fallbackTopbar = `
+<div class="fixed-top-bar">
+  <a href="https://instagram.com/aulapsoftware" target="_blank" rel="noopener noreferrer"><span>Instagram: @aulapsoftware</span></a>
+</div>
+  `;
+
   const fallbackMenu = `
 <header class="site-header">
   <nav class="site-nav container" aria-label="Primary navigation">
@@ -148,6 +154,7 @@
   };
 
   const init = async () => {
+    await loadInclude('[data-include="topbar"]', 'topbar.html', fallbackTopbar);
     await loadInclude('[data-include="menu"]', 'menu.html', fallbackMenu);
     await loadInclude('[data-include="footer"]', 'footer.html', fallbackFooter);
     initNavigation();
