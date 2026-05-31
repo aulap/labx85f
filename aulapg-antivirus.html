@@ -14,14 +14,14 @@
 
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="AulapG Antivirus untuk PC Windows. Antivirus ringan dan mudah digunakan, gratis dicoba, mendukung deteksi fileless malware dan Runtime Suspicious Detection. Upgrade fitur tambahan Rp50.000 per tahun." />
-      <meta name="keywords" content="AulapG Antivirus, antivirus gratis dicoba, antivirus murah, antivirus Windows, antivirus ringan, antivirus mudah digunakan, antivirus 50 ribu, antivirus tambahan Windows Defender, fileless malware, Runtime Suspicious Detection" />
+      <meta name="description" content="AulapG Antivirus untuk PC Windows. Antivirus ringan dan mudah digunakan, mendukung fileless malware, Runtime Suspicious Detection, dan fitur Investigate untuk meninjau aktivitas mencurigakan." />
+      <meta name="keywords" content="AulapG Antivirus, antivirus gratis dicoba, antivirus murah, antivirus Windows, antivirus ringan, antivirus mudah digunakan, antivirus tambahan Windows Defender, fileless malware, Runtime Suspicious Detection, Investigate, endpoint investigation, PowerShell, Defender tampering, SMB admin share" />
       <meta name="author" content="Fajar Anggiawan" />
       <meta property="og:title" content="AulapG Antivirus untuk PC Windows" />
-      <meta property="og:description" content="Antivirus ringan untuk PC Windows, gratis dicoba, mudah digunakan, dan tersedia fitur tambahan Rp50.000 per tahun." />
+      <meta property="og:description" content="Antivirus ringan untuk PC Windows dengan Runtime Suspicious Detection dan fitur Investigate untuk meninjau aktivitas mencurigakan." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://aulap.my.id/aulapg-antivirus.html" />
-      <title>AulapG Antivirus - Gratis Dicoba, Fitur Tambahan Rp50.000</title>
+      <title>AulapG Antivirus - Proteksi Ringan dengan Investigate</title>
       <link rel="canonical" href="https://aulap.my.id/aulapg-antivirus.html" />
       <link rel="stylesheet" href="styles.css" />
       <meta name="theme-color" content="#0F172A" />
@@ -249,7 +249,7 @@
 
          .feature-grid {
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1rem;
             margin-top: 1.4rem;
          }
@@ -470,17 +470,18 @@
             <div>
                <span class="eyebrow">Antivirus tambahan untuk PC Windows</span>
                <h1 id="hero-title">AulapG Antivirus</h1>
-               <p class="hero-lead">Antivirus ringan dan mudah digunakan untuk membantu menjaga PC Windows dari aktivitas mencurigakan. Gratis dicoba, lalu upgrade fitur tambahan hanya Rp50.000 per tahun.</p>
-               <div class="hero-offer"><span>Gratis dicoba</span><strong>Fitur tambahan Rp50.000/tahun</strong></div>
+               <p class="hero-lead">Antivirus ringan dan mudah digunakan untuk membantu menjaga PC Windows dari aktivitas mencurigakan, dengan fitur Investigate untuk meninjau login, remote access, PowerShell, Defender, dan SMB activity.</p>
                <div class="hero-actions">
                   <a class="landing-btn landing-btn-primary" href="https://drive.google.com/uc?export=download&id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_">Coba Gratis</a>
-                  <a class="landing-btn landing-btn-secondary" href="https://aulap.my.id/AulapG.html?showModal=1">Upgrade Rp50.000</a>
+                  <a class="landing-btn landing-btn-secondary" href="https://aulap.my.id/AulapG.html?showModal=1">Upgrade Fitur</a>
                </div>
                <div class="hero-points" aria-label="Ringkasan fitur AulapG Antivirus">
                   <span class="hero-point">Ringan untuk penggunaan harian</span>
                   <span class="hero-point">Dapat berjalan bersama Windows Defender</span>
                   <span class="hero-point">Mendeteksi indikasi fileless malware</span>
                   <span class="hero-point">Runtime Suspicious Detection</span>
+                  <span class="hero-point">Investigate untuk aktivitas mencurigakan</span>
+                  <span class="hero-point">PowerShell, Defender, dan SMB signals</span>
                </div>
             </div>
             <aside class="price-card" aria-label="Harga AulapG Antivirus">
@@ -515,6 +516,10 @@
                   <h3>Runtime detection</h3>
                   <p>Membantu membaca aktivitas mencurigakan saat proses berjalan.</p>
                </article>
+               <article class="feature-card">
+                  <h3>Investigate</h3>
+                  <p>Meninjau failed login, remote access, service creation, Defender tampering, SMB admin share access, dan high-risk PowerShell signals.</p>
+               </article>
             </div>
          </section>
 
@@ -522,7 +527,7 @@
             <div>
                <p class="section-kicker">Penggunaan</p>
                <h2 id="cocok-title">Cocok untuk komputer yang sering menerima file dari banyak sumber.</h2>
-               <p>AulapG dibuat untuk penggunaan praktis: komputer rumah, laptop kerja, sekolah, lab komputer, kantor kecil, dan perangkat yang sering memakai flashdisk atau installer dari internet.</p>
+               <p>AulapG dibuat untuk penggunaan praktis: komputer rumah, laptop kerja, sekolah, lab komputer, kantor kecil, dan perangkat yang sering memakai flashdisk atau installer dari internet. Fitur Investigate membantu pengguna meninjau aktivitas akses dan sinyal mencurigakan ketika diperlukan.</p>
             </div>
             <ul class="use-list">
                <li>PC Windows pribadi</li>
@@ -549,7 +554,7 @@
                <article class="step-card">
                   <span class="step-number">3</span>
                   <h3>Upgrade</h3>
-                  <p>Bayar Rp50.000 per tahun untuk membuka fitur tambahan.</p>
+                  <p>Upgrade untuk membuka fitur tambahan premium.</p>
                </article>
             </div>
          </section>
@@ -571,15 +576,19 @@
                   <p>Tidak ada antivirus yang bisa menjamin 100%. AulapG membantu menambah perlindungan, sementara pengguna tetap perlu berhati-hati saat membuka file, link, atau installer.</p>
                </details>
                <details>
+                  <summary>Apa fungsi fitur Investigate?</summary>
+                  <p>Investigate membantu meninjau failed login, remote login, perubahan akun, service creation, log clearing, Defender tampering, SMB admin share access, dan high-risk PowerShell signals dari satu tampilan ringkas.</p>
+               </details>
+               <details>
                   <summary>Apakah bisa dicoba gratis?</summary>
-                  <p>Ya. AulapG dapat dicoba gratis. Fitur tambahan tersedia dengan upgrade Rp50.000 per tahun.</p>
+                  <p>Ya. AulapG dapat dicoba gratis. Fitur tambahan tersedia melalui upgrade.</p>
                </details>
             </div>
          </section>
 
          <section class="final-cta" id="beli" aria-labelledby="final-cta-title">
-            <h2 id="final-cta-title">Tambah perlindungan untuk PC Windows Anda.</h2>
-            <p class="cta-price-highlight"><span>Gratis dicoba</span><strong>Upgrade fitur tambahan Rp50.000 per tahun</strong></p>
+            <h2 id="final-cta-title">Tambah perlindungan dan visibilitas investigasi untuk PC Windows Anda.</h2>
+            <p class="cta-price-highlight"><span>Gratis dicoba</span><strong>Upgrade fitur tambahan kapan saja</strong></p>
             <div class="cta-actions">
                <a class="landing-btn landing-btn-primary" href="https://drive.google.com/uc?export=download&id=1rJBWZpP038h54Gn15IOxtJwQf168hTg_">Coba Gratis</a>
                <a class="landing-btn landing-btn-secondary" href="https://aulap.my.id/AulapG.html?showModal=1">Upgrade Fitur Tambahan</a>
