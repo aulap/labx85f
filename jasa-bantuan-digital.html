@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasa Bantuan Digital & Teknis</title>
+  <meta name="description" content="Jasa bantuan digital dan teknis untuk pengecekan awal akun, link, dokumen, keamanan akun, instalasi tools, add-in, dan troubleshooting ringan." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #111827;
+      --card: #ffffff;
+      --card-soft: #f8fafc;
+      --text: #0f172a;
+      --muted: #64748b;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --border: #e5e7eb;
+      --shadow: 0 20px 50px rgba(15, 23, 42, 0.14);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #f1f5f9;
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      padding: 28px 20px 80px;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 34%),
+        radial-gradient(circle at 90% 20%, rgba(34, 197, 94, 0.2), transparent 28%),
+        linear-gradient(135deg, #020617 0%, #0f172a 48%, #111827 100%);
+      color: white;
+    }
+
+    .nav {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+      font-weight: 900;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .hero-inner {
+      max-width: 1160px;
+      margin: 90px auto 0;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 14px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(12px);
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.12);
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1.04;
+      letter-spacing: -0.07em;
+      max-width: 780px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.76);
+      max-width: 680px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 13px 18px;
+      border-radius: 14px;
+      font-weight: 750;
+      font-size: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 16px 32px rgba(37, 99, 235, 0.32);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+
+    .btn-soft {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--text);
+      border-radius: 30px;
+      padding: 26px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .price-box {
+      padding: 24px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #eff6ff, #f8fafc);
+      border: 1px solid #dbeafe;
+      margin-bottom: 18px;
+    }
+
+    .price-label {
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .price {
+      font-size: 46px;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .price-note {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #334155;
+      font-size: 15px;
+    }
+
+    .check {
+      flex: 0 0 22px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #dcfce7;
+      color: #15803d;
+      font-size: 13px;
+      font-weight: 900;
+      margin-top: 2px;
+    }
+
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.12;
+      letter-spacing: -0.05em;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 35px rgba(15, 23, 42, 0.05);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: #eff6ff;
+      color: var(--primary);
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .card p,
+    .card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .card ul {
+      margin-left: 18px;
+      margin-top: 10px;
+    }
+
+    .process {
+      counter-reset: step;
+    }
+
+    .step {
+      position: relative;
+      padding-left: 68px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 24px;
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--bg);
+      color: white;
+      font-weight: 900;
+    }
+
+    .pricing {
+      background: white;
+    }
+
+    .pricing-card {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 22px;
+      align-items: stretch;
+      background: #0f172a;
+      color: white;
+      border-radius: 34px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .pricing-main {
+      padding: 26px;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.18), transparent 35%),
+        linear-gradient(135deg, #1e293b, #020617);
+    }
+
+    .pricing-main .price {
+      color: white;
+      font-size: 54px;
+      margin: 8px 0 10px;
+    }
+
+    .pricing-main p {
+      color: rgba(255, 255, 255, 0.72);
+    }
+
+    .pricing-detail {
+      background: white;
+      color: var(--text);
+      border-radius: 26px;
+      padding: 26px;
+    }
+
+    .notice {
+      display: flex;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 18px;
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      color: #92400e;
+      margin-top: 18px;
+      font-size: 14px;
+    }
+
+    .promo {
+      padding: 0 20px 80px;
+      background: white;
+    }
+
+    .promo-box {
+      max-width: 1160px;
+      margin: 0 auto;
+      border-radius: 30px;
+      padding: 28px;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(37, 99, 235, 0.24), transparent 28%),
+        radial-gradient(circle at 80% 10%, rgba(34, 197, 94, 0.18), transparent 30%),
+        linear-gradient(135deg, #020617, #111827);
+      color: white;
+      display: grid;
+      grid-template-columns: 1.4fr 0.6fr;
+      gap: 20px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .promo-box h2 {
+      font-size: clamp(26px, 3vw, 38px);
+      margin-bottom: 10px;
+    }
+
+    .promo-box p {
+      color: rgba(255, 255, 255, 0.72);
+      max-width: 720px;
+    }
+
+    .promo-badge {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(34, 197, 94, 0.14);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      color: #bbf7d0;
+      font-weight: 750;
+      font-size: 13px;
+    }
+
+    .limits {
+      background: #f8fafc;
+    }
+
+    .do-dont {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .do {
+      border-left: 5px solid var(--accent);
+    }
+
+    .dont {
+      border-left: 5px solid var(--danger);
+    }
+
+    .footer {
+      padding: 34px 20px;
+      background: #020617;
+      color: rgba(255, 255, 255, 0.72);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer strong {
+      color: white;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 50;
+      background: #22c55e;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 999px;
+      box-shadow: 0 16px 34px rgba(34, 197, 94, 0.35);
+      font-weight: 850;
+      font-size: 14px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 18px 0;
+    }
+
+    @media (max-width: 860px) {
+      .hero-inner,
+      .pricing-card,
+      .promo-box,
+      .grid-3,
+      .grid-2,
+      .do-dont {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero-inner {
+        margin-top: 58px;
+      }
+
+      .pricing-card,
+      .promo-box {
+        border-radius: 24px;
+      }
+
+      section {
+        padding: 60px 18px;
+      }
+
+      .whatsapp-float {
+        left: 18px;
+        right: 18px;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+    .qr-payment {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.qr-payment img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 14px;
+  background: white;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.qr-payment h3 {
+  margin-bottom: 4px;
+}
+
+.qr-payment p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+@media (max-width: 560px) {
+  .qr-payment {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <nav class="nav">
+        <a class="brand" href="#">
+          <span class="brand-mark">D</span>
+          <span>Bantuan Digital</span>
+        </a>
+        <div class="nav-links">
+          <a href="#layanan">Layanan</a>
+          <a href="#alur">Alur</a>
+          <a href="#biaya">Biaya</a>
+          <a href="#ketentuan">Ketentuan</a>
+          <a href="aulapg-antivirus.html">AulapG</a>
+        </div>
+      </nav>
+
+      <div class="hero-inner">
+        <div>
+          <div class="badge"><span class="badge-dot"></span> Bantuan digital, teknis, dan keamanan akun</div>
+          <h1>Butuh bantuan cek akun, link, aplikasi, atau masalah digital?</h1>
+          <p>
+            Kami membantu pemeriksaan awal terhadap masalah digital seperti akun mencurigakan,
+            link penipuan, bukti chat, keamanan akun, instalasi add-in, konfigurasi tools,
+            dan troubleshooting ringan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#biaya">Lihat Biaya Pemeriksaan Awal</a>
+            <a class="btn btn-soft" href="#layanan">Lihat Layanan</a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="price-box">
+            <div class="price-label">Biaya Pemeriksaan Awal</div>
+            <div class="price">Rp50.000</div>
+            <div class="price-note">Untuk membaca masalah, memeriksa data awal, dan menentukan apakah bisa dibantu lebih lanjut.</div>
+          </div>
+
+          <div class="check-list">
+            <div class="check-item"><span class="check">✓</span><span>Cocok untuk kasus akun, link, chat, email, dokumen, aplikasi, dan tools.</span></div>
+            <div class="check-item"><span class="check">✓</span><span>Metode legal, aman, dan tidak melanggar privasi.</span></div>
+            <div class="check-item"><span class="check">✓</span><span>Biaya lanjutan hanya diberikan setelah pemeriksaan awal.</span></div>
+            <div class="check-item"><span class="check">✓</span><span>Klien bebas lanjut atau berhenti setelah mendapat estimasi.</span></div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <section id="layanan">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Layanan</div>
+          <h2>Bantuan yang fleksibel untuk kebutuhan digital sehari-hari.</h2>
+          <p>
+            Layanan dibuat umum agar bisa menyesuaikan kebutuhan klien, mulai dari pengecekan awal sampai bantuan teknis ringan.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon">🔎</div>
+            <h3>Pengecekan Awal Digital</h3>
+            <p>Pemeriksaan awal terhadap akun, username, profil, link, nomor, email, screenshot, atau informasi digital yang mencurigakan.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🧾</div>
+            <h3>Baca Bukti & Kronologi</h3>
+            <p>Membantu membaca chat, email, link, dokumen, dan kronologi agar masalah lebih jelas sebelum menentukan langkah berikutnya.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🛡️</div>
+            <h3>Keamanan Akun</h3>
+            <p>Panduan mengamankan akun, mengganti password, mengaktifkan 2FA/MFA, dan mengurangi risiko akses tidak sah.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🧩</div>
+            <h3>Instalasi Add-in & Tools</h3>
+            <p>Bantuan instalasi add-in, aplikasi, tools kerja, konfigurasi dasar, dan panduan penggunaan awal.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>Troubleshooting Ringan</h3>
+            <p>Bantuan untuk masalah aplikasi, browser, email, dokumen, file, pengaturan dasar, dan kendala teknis umum.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">💬</div>
+            <h3>Konsultasi Digital</h3>
+            <p>Diskusi awal untuk memahami masalah, menilai risiko, dan memberi saran langkah yang aman dan masuk akal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="alur" class="limits">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Alur Kerja</div>
+           <p>
+            Pemeriksaan awal dilakukan lebih dulu agar kebutuhan, risiko, dan kemungkinan hasil bisa dipahami sebelum ada biaya lanjutan.
+          </p>
+        </div>
+
+        <div class="grid grid-2 process">
+          <div class="card step">
+            <h3>Kirim kebutuhan</h3>
+            <p>Klien menyampaikan masalah, tujuan, dan informasi awal yang relevan.</p>
+          </div>
+
+          <div class="card step">
+            <h3>Pemeriksaan awal</h3>
+            <p>Dilakukan pemeriksaan awal dengan biaya Rp50.000 untuk memahami kasus dan menilai apakah bisa dibantu.</p>
+          </div>
+
+          <div class="card step">
+            <h3>Ringkasan hasil</h3>
+            <p>Klien mendapat ringkasan hasil awal, batasan, dan rekomendasi langkah berikutnya.</p>
+          </div>
+
+          <div class="card step">
+            <h3>Estimasi lanjutan</h3>
+            <p>Jika perlu dilanjutkan, biaya lanjutan akan diinformasikan terlebih dahulu. Klien bebas setuju atau tidak.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="biaya" class="pricing">
+      <div class="container">
+        <div class="pricing-card">
+          <div class="pricing-main">
+            <div class="eyebrow" style="color:#93c5fd;">Biaya Awal</div>
+            <h2>Pemeriksaan Awal</h2>
+            <div class="price">Rp50.000</div>
+            <p>
+              Biaya ini digunakan untuk waktu pengecekan, membaca kronologi, memeriksa data awal,
+              dan menentukan kemungkinan bantuan lanjutan.
+            </p>
+          </div>
+
+          <div class="pricing-detail">
+            <h3>Yang termasuk dalam pemeriksaan awal:</h3>
+            <div class="check-list">
+              <div class="check-item"><span class="check">✓</span><span>Membaca masalah dan tujuan klien.</span></div>
+              <div class="check-item"><span class="check">✓</span><span>Memeriksa informasi awal seperti screenshot, link, email, akun, dokumen, atau kronologi.</span></div>
+              <div class="check-item"><span class="check">✓</span><span>Menentukan apakah permintaan bisa dibantu secara legal dan aman.</span></div>
+              <div class="check-item"><span class="check">✓</span><span>Memberikan rekomendasi awal dan estimasi biaya lanjutan jika diperlukan.</span></div>
+            </div>
+
+            <div class="notice">
+              <strong>!</strong>
+              <span>
+                Biaya pemeriksaan awal bersifat non-refundable karena digunakan untuk proses review, pengecekan,
+                dan analisis awal, meskipun hasil belum menemukan solusi atau informasi tambahan.
+              </span>
+            </div>
+            <div class="qr-payment">
+  <img src="https://aulap.my.id/qr.png" alt="QR pembayaran pemeriksaan awal" />
+  <div>
+    <h3>Scan QR untuk Pembayaran</h3>
+    <p>Pembayaran biaya pemeriksaan awal Rp50.000 dapat dilakukan melalui QR berikut.</p>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo-box">
+        <div>
+          <span class="promo-badge">Rekomendasi Keamanan</span>
+          <h2>Lindungi perangkat dari ancaman malware modern.</h2>
+          <p>
+            Untuk perlindungan tambahan dari ancaman seperti malware script, fileless malware,
+            link mencurigakan, dan aktivitas berbahaya lain, kenali juga AulapG Antivirus.
+          </p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="aulapg-antivirus.html">Lihat AulapG Antivirus</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ketentuan" class="limits">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Ketentuan</div>
+          <h2>Aman, legal, dan tidak melanggar privasi.</h2>
+          <p>
+            Agar layanan tetap profesional, ada batasan jelas mengenai hal yang dapat dan tidak dapat dibantu.
+          </p>
+        </div>
+
+        <div class="do-dont">
+          <div class="card do">
+            <h3>Dapat Dibantu</h3>
+            <ul>
+              <li>Pengecekan awal akun, link, profil, email, dokumen, atau screenshot.</li>
+              <li>Konsultasi keamanan akun dan perlindungan data pribadi.</li>
+              <li>Bantuan instalasi add-in, aplikasi, dan tools.</li>
+              <li>Troubleshooting ringan dan panduan teknis.</li>
+              <li>Rekomendasi langkah aman untuk kasus digital.</li>
+            </ul>
+          </div>
+
+          <div class="card dont">
+            <h3>Tidak Dilayani</h3>
+            <ul>
+              <li>Membobol akun, mencari password, atau mengambil alih akun.</li>
+              <li>Bypass OTP, MFA, atau sistem keamanan.</li>
+              <li>Penyadapan, hacking, phishing, atau social engineering.</li>
+              <li>Mencari data pribadi non-publik tanpa dasar yang sah.</li>
+              <li>Permintaan yang mengarah ke stalking, doxxing, pemerasan, atau pelanggaran hukum.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px;">
+          <h3>Catatan Penting</h3>
+          <p class="muted">
+            Hasil layanan tidak selalu dapat dijamin karena setiap kasus memiliki kondisi, data, dan tingkat kesulitan yang berbeda.
+            Penyedia layanan berhak menolak permintaan yang berisiko melanggar hukum, privasi, atau etika.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <strong>Jasa Bantuan Digital & Teknis</strong><br />
+      Bantuan digital profesional untuk keamanan akun, instalasi tools, dan troubleshooting.</footer>
+
+    <a class="whatsapp-float" href="https://wa.me/6285885208446?text=Halo%2C%20saya%20ingin%20konsultasi%20bantuan%20digital." target="_blank" rel="noopener">
+      Konsultasi via WhatsApp
+    </a>
+  </div>
+</body>
+</html>
