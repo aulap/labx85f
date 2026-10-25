@@ -2,9 +2,7 @@
 function initSite() {
   'use strict';
   // Add your published Google Forms embed URL to enable the contact form iframe.
-  const GOOGLE_FORM_EMBED_URL = '
-https://docs.google.com/forms/d/e/1FAIpQLSeZ1LosfzOs3a1eejzMewDE5a1QXg9lWX3bZMucCm8LJ_Mgng/viewform?embedded=true
-';
+  const GOOGLE_FORM_EMBED_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeZ1LosfzOs3a1eejzMewDE5a1QXg9lWX3bZMucCm8LJ_Mgng/viewform?embedded=true';
   const $ = (selector) => document.querySelector(selector);
   const start = $('#start-button');
   const startMenu = $('#start-menu');
