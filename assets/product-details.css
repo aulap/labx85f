@@ -1,0 +1,53 @@
+/* Product Detail Layout / Aulap Software — standalone static CSS, no dependencies */
+.product-page .page-intro{position:relative;overflow:hidden;padding:34px 38px 32px;background:linear-gradient(115deg,#101b2e 0%,#182b43 75%,#143650 100%)}
+.product-page .product-lead{max-width:780px;line-height:1.82;font-size:14px;color:#bfcee0;margin:0 0 20px}
+.product-page .page-intro h1{font-size:clamp(28px,3.9vw,43px);margin:8px 0 10px;letter-spacing:-.035em}
+.product-page .detail-subtitle{font-size:clamp(16px,1.8vw,19px);color:#e4d1a9;margin:0 0 13px;font-weight:700}
+.product-page .detail-tags{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 21px}
+.product-page .detail-tags span{display:inline-block;padding:4px 9px;font:700 10px/1.5 'Courier New',monospace;background:#263c58;color:#d1e4f8;border:1px solid #486587}
+.product-page .hero-facts{border-top:1px solid #3a5069;display:flex;gap:13px 26px;flex-wrap:wrap;margin-top:24px;padding-top:13px;color:#91abc6;font-size:11px}
+.product-page .hero-facts strong{color:#eaf1ff}
+.product-page .detail-shortcuts{display:flex;flex-wrap:wrap;gap:8px 20px;margin:20px 0 24px;padding:12px 14px;border:1px solid #465d7a;background:#142338;font-size:12px}
+.product-page .detail-shortcuts a{font-weight:700}
+.product-page .detail-shortcuts span{color:#91aecb;font-weight:800;font:700 11px 'Courier New',monospace}
+.product-page .detail-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(270px,.9fr);gap:16px;align-items:stretch}
+.product-page .detail-top>.dark-panel{margin:0}.product-page .detail-top .panel-content{padding:26px 28px}
+.product-page .detail-top .panel-content h2{font-size:20px}
+.product-page .detail-top .panel-content p{margin:0}
+.product-page .detail-preview .image-panel{min-height:250px;display:grid;place-items:center}
+.product-page .detail-preview img{max-height:315px;object-fit:contain}
+.product-page .detail-preview .software-identity{width:100%}
+.product-page .detail-section{margin-top:26px}
+.product-page .detail-section>h2{font-size:22px;margin:0 0 14px;letter-spacing:-.02em;color:#f0f5ff}
+.product-page .section-intro{color:#a8b8cc;max-width:700px;font-size:12px;margin:-4px 0 15px}
+.product-page .detail-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.product-page .detail-feature{background:#142237;border:1px solid #4b617e;min-width:0;padding:20px 18px;box-shadow:inset 1px 1px #56718d30}
+.product-page .detail-feature .feature-index{display:inline-block;color:#edc985;font:700 10px 'Courier New',monospace;margin-bottom:12px}
+.product-page .detail-feature h3{font-size:15px;margin:0 0 10px;color:#f0f5ff}
+.product-page .detail-feature p{font-size:12px;line-height:1.75;color:#b0c2d8;margin:0}
+.product-page .detail-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;align-items:stretch}
+.product-page .detail-two .panel-content{padding:23px 27px}
+.product-page .detail-two .panel-content h2{margin:0 0 13px;font-size:20px}
+.product-page .detail-two .panel-content ul,.product-page .detail-two .panel-content ol{padding-left:20px;margin:0}
+.product-page .detail-two .panel-content li{margin:0 0 9px}
+.product-page .detail-two .panel-content li:last-child{margin-bottom:0}
+.product-page .detail-notes{padding:20px 25px;background:#18283b;border:1px solid #4d627d}
+.product-page .detail-notes h2{font-size:19px;margin:0 0 12px;color:#e8edf8}
+.product-page .detail-notes ul{margin:0;padding-left:19px}
+.product-page .detail-notes li{font-size:12px;line-height:1.75;color:#becadb;margin:7px 0}
+.product-page .detail-notes a{font-weight:700}
+.product-page .detail-faq details{border:1px solid #405773;background:#132337;margin:0 0 9px;padding:0 17px}
+.product-page .detail-faq summary{cursor:pointer;list-style:none;position:relative;color:#eaf1fb;font-weight:700;font-size:13px;padding:16px 30px 16px 0}
+.product-page .detail-faq summary::-webkit-details-marker{display:none}
+.product-page .detail-faq summary:after{content:'+';position:absolute;right:0;top:13px;color:#e3c282;font-size:20px;line-height:1.1}
+.product-page .detail-faq details[open] summary:after{content:'−'}
+.product-page .detail-faq details p{font-size:12px;color:#b6c7db;line-height:1.8;padding:0 0 17px;margin:0}
+.product-page .detail-cta{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;margin-top:29px;padding:25px 28px;background:linear-gradient(110deg,#172b47,#19416a);border:1px solid #547393}
+.product-page .detail-cta h2{font-size:20px;margin:0 0 6px;color:#f2f6fc}
+.product-page .detail-cta p{margin:0;color:#bfd0e2;font-size:12px}
+.product-page .detail-cta .actions{justify-content:flex-end}
+.product-page .detail-foot{font-size:11px;color:#8fa4b9;line-height:1.75;margin:19px 0 0}
+@media(max-width:900px){.product-page .detail-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:740px){.product-page .page-intro{padding:25px 21px}.product-page .detail-top{grid-template-columns:1fr}.product-page .detail-two{grid-template-columns:1fr}.product-page .detail-shortcuts{gap:9px 14px}.product-page .detail-cta{padding:22px 19px}}
+@media(max-width:500px){.product-page .detail-feature-grid{grid-template-columns:1fr}.product-page .detail-top .panel-content,.product-page .detail-two .panel-content{padding:20px}.product-page .page-intro .button{width:100%}.product-page .detail-cta .actions{width:100%}.product-page .detail-cta .button{flex:1}.product-page .hero-facts{display:grid;gap:7px}}
+@media(prefers-reduced-motion:reduce){.product-page *{scroll-behavior:auto!important}}
