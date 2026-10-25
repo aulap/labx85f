@@ -4,87 +4,122 @@
 
   <url>
        <loc>https://aulap.my.id/</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>1.0000</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/AulapG.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/services.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/payment.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/contact.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/download-safety.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/terms-of-use.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/privacy-policy.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.6400</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/index.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.5120</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/refund-policy.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.5120</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/software.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.3277</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/about.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.3277</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/cookie-policy.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.3277</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/disclaimer.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.3277</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/BlokNet.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.2621</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/FreeWhatsAppBulkSender.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.2621</priority>
   </url>
   <url>
        <loc>https://aulap.my.id/SecurePhoto.html</loc>
-       <lastmod>2026-10-25T07:21:30+00:00</lastmod>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/DisplayGuard.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/ServiceMonitor.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/ScriptBlocker.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/LaptopSecondInspector.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/UnplugAlert.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/NetArmor.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
+       <priority>0.2621</priority>
+  </url>
+  <url>
+       <loc>https://aulap.my.id/PanicMode.html</loc>
+       <lastmod>2026-10-25T09:17:40+00:00</lastmod>
        <priority>0.2621</priority>
   </url>
 </urlset>
