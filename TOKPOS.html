@@ -62,8 +62,8 @@
     .tokpos-page .tp-traits{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 24px;padding:0;list-style:none}
     .tokpos-page .tp-traits li{font-size:.77rem;line-height:1.3;color:#c6ddf2;padding:8px 10px;border:1px solid #38536e;background:#14243a;font-weight:650}
     .tokpos-page .tp-demo-note{font-size:.79rem;color:var(--tp-muted);margin:12px 0 0;min-height:22px}
-    .tokpos-page .tp-screen-main{border:6px solid #192738;outline:1px solid #56728f;background:#0b1726;min-height:295px}
-    .tokpos-page .tp-screenshot{position:relative;overflow:hidden;min-height:236px;display:grid;place-items:center;background:radial-gradient(ellipse at 63% 25%,#1c3853 0,#102236 45%,#0b1726 100%)}
+    .tokpos-page .tp-screen-main{background:#0b1726}
+    .tokpos-page .tp-screenshot{position:relative;overflow:hidden;width:100%;aspect-ratio:16/9;min-height:0;display:grid;place-items:center;background:radial-gradient(ellipse at 63% 25%,#1c3853 0,#102236 45%,#0b1726 100%)}
     .tokpos-page .tp-screenshot::before{content:"";position:absolute;inset:0;opacity:.29;pointer-events:none;background-image:linear-gradient(#89b7e020 1px,transparent 1px),linear-gradient(90deg,#89b7e020 1px,transparent 1px);background-size:25px 25px}
     .tokpos-page .tp-shot-placeholder{position:relative;z-index:1;display:grid;justify-items:center;gap:8px;padding:20px;text-align:center;max-width:100%}
     .tokpos-page .tp-shot-icon{width:56px;height:47px;border:2px solid #6692bd;display:grid;place-items:center;background:#173452;font:700 1.2rem/1 ui-monospace,Consolas,monospace;color:#c8e4ff;box-shadow:4px 4px 0 #08111d}
@@ -71,7 +71,7 @@
     .tokpos-page .tp-shot-placeholder small{font:.76rem/1.45 ui-monospace,Consolas,monospace;color:#9ebcd4;overflow-wrap:anywhere}
     .tokpos-page .tp-screenshot img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#0a1320;z-index:2}
     .tokpos-page .tp-screenshot img[hidden],.tokpos-page [hidden]{display:none!important}
-    .tokpos-page .tp-preview-note{display:flex;justify-content:space-between;gap:9px;flex-wrap:wrap;padding:10px 13px;border-top:1px solid #30465b;color:#b3c9de;font-size:.75rem}
+    
     .tokpos-page .tp-section{margin:0 0 clamp(38px,5vw,64px);scroll-margin-top:30px}
     .tokpos-page .tp-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:0 0 21px}
     .tokpos-page .tp-heading p{margin:7px 0 0;color:#b8cbdf;max-width:700px}
@@ -83,7 +83,7 @@
     .tokpos-page .tp-feature p{color:#b8c9d9;font-size:.9rem;margin:0}
     .tokpos-page .tp-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     .tokpos-page .tp-gallery figure{margin:0;min-width:0}
-    .tokpos-page .tp-gallery .tp-screenshot{min-height:235px}
+    
     .tokpos-page .tp-gallery figcaption{padding:12px 3px 0;color:#bacde0;font-size:.84rem}
     .tokpos-page .tp-gallery figcaption strong{color:#f2f8ff}
     .tokpos-page .tp-scope{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:14px}
@@ -109,10 +109,23 @@
     .tokpos-page .tp-spec strong{color:#e8f5ff}
     .tokpos-page .tp-foot{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap;border-top:1px solid #35506b;padding-top:20px;color:#9bb5ca;font-size:.8rem}
     .tokpos-page .tp-foot a{color:#a9dbff}
-    @media(max-width:1050px){.tokpos-page .tp-hero{grid-template-columns:1fr}.tokpos-page .tp-screen-main{min-height:280px}.tokpos-page .tp-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tokpos-page .tp-offer{grid-template-columns:1fr 1fr}}
+    @media(max-width:1050px){.tokpos-page .tp-hero{grid-template-columns:1fr}.tokpos-page .tp-feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tokpos-page .tp-offer{grid-template-columns:1fr 1fr}}
     @media(max-width:780px){.tokpos-page .tp-scope,.tokpos-page .tp-offer{grid-template-columns:1fr}.tokpos-page .tp-gallery{grid-template-columns:1fr}}
-    @media(max-width:560px){.tokpos-page .tp-hero{padding:28px 0 30px;gap:24px}.tokpos-page h1{font-size:3.3rem}.tokpos-page .tp-feature-grid{grid-template-columns:1fr}.tokpos-page .tp-heading{display:block}.tokpos-page .tp-screen-main{min-height:235px}.tokpos-page .tp-screenshot{min-height:220px}.tokpos-page .tp-btn{width:100%}.tokpos-page .tp-buttons{display:grid}.tokpos-page .tp-panel{padding:20px}.tokpos-page .tp-offer-side{padding:22px}}
+    @media(max-width:560px){.tokpos-page .tp-hero{padding:28px 0 30px;gap:24px}.tokpos-page h1{font-size:3.3rem}.tokpos-page .tp-feature-grid{grid-template-columns:1fr}.tokpos-page .tp-heading{display:block}.tokpos-page .tp-btn{width:100%}.tokpos-page .tp-buttons{display:grid}.tokpos-page .tp-panel{padding:20px}.tokpos-page .tp-offer-side{padding:22px}}
     @media(prefers-reduced-motion:reduce){.tokpos-page .tp-btn{transition:none}.tokpos-page .tp-btn:hover{transform:none}}
+
+    /* Screenshot kasir, stok, laporan memakai rasio yang sama; klik untuk membuka ukuran besar. */
+    .tokpos-page .tp-image-open{position:absolute;inset:0;z-index:3;width:100%;height:100%;padding:12px;border:0;background:transparent;cursor:zoom-in;display:flex;align-items:flex-end;justify-content:flex-end;color:#fff}
+    .tokpos-page .tp-image-open[hidden]{display:none!important}
+    .tokpos-page .tp-image-open span{padding:8px 11px;background:#0a1627eb;border:1px solid #82aecf;font:700 .78rem/1.25 ui-monospace,Consolas,monospace;box-shadow:0 2px 10px #0009}
+    .tokpos-page .tp-image-open:hover span{background:#24476b}
+    .tokpos-page .tp-image-open:focus-visible{outline:3px solid #f9d488;outline-offset:-5px}
+    .tokpos-page .tp-lightbox{width:min(96vw,1500px);max-width:96vw;max-height:94vh;overflow:hidden;margin:auto;padding:0;border:1px solid #7498b9;background:#091522;color:#ecf6ff;box-shadow:0 30px 90px #000c}
+    .tokpos-page .tp-lightbox::backdrop{background:rgba(1,5,11,.89)}
+    .tokpos-page .tp-lightbox-head{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:10px 14px;border-bottom:1px solid #5c82a4;background:linear-gradient(90deg,#244d85,#153b6b);color:#fff;font:700 .9rem ui-monospace,Consolas,monospace}
+    .tokpos-page .tp-lightbox-close{border:1px solid #dce9f3;background:#d5e1ec;color:#15283a;padding:7px 13px;font:700 .88rem ui-monospace,Consolas,monospace;cursor:pointer;flex:none}
+    .tokpos-page .tp-lightbox img{display:block;width:100%;height:auto;max-height:calc(94vh - 49px);object-fit:contain;background:#091522}
+    @media(max-width:560px){.tokpos-page .tp-image-open span{padding:6px 9px;font-size:.72rem}.tokpos-page .tp-lightbox-head{font-size:.75rem;padding:8px 10px}.tokpos-page .tp-lightbox img{max-height:calc(94vh - 43px)}}
   </style>
   <script src="assets/cyber-history.js" defer></script>
   <script src="assets/includes.js" defer></script>
@@ -147,9 +160,9 @@
             <div class="tp-screenshot" data-image="assets/tokpos-dashboard.png">
               <div class="tp-shot-placeholder"><span class="tp-shot-icon" aria-hidden="true">▦</span><strong>Tampilan Kasir TOKPOS</strong><small>assets/tokpos-kasir.webp</small></div>
               <img alt="Tampilan antarmuka kasir TOKPOS untuk transaksi penjualan" hidden>
+              <button type="button" class="tp-image-open" hidden aria-label="Perbesar gambar Kasir TOKPOS"><span>⤢ Perbesar gambar</span></button>
             </div>
           </div>
-          <div class="tp-preview-note"><span>Preview 01 / Kasir</span><span>Tampilan aplikasi desktop</span></div>
         </div>
       </section>
 
@@ -170,13 +183,13 @@
         <div class="tp-gallery">
           <figure>
             <div class="tp-window"><div class="tp-titlebar"><span>▣ TOKPOS — Produk &amp; Stok</span><div class="tp-title-controls" aria-hidden="true"><span>—</span><span>□</span><span>×</span></div></div>
-              <div class="tp-screenshot" data-image="assets/tokpos-stok.png"><div class="tp-shot-placeholder"><span class="tp-shot-icon" aria-hidden="true">▤</span><strong>Tampilan Produk &amp; Stok</strong><small>assets/tokpos-stok.webp</small></div><img alt="Tampilan manajemen produk dan stok TOKPOS" hidden></div>
+              <div class="tp-screenshot" data-image="assets/tokpos-stok.png"><div class="tp-shot-placeholder"><span class="tp-shot-icon" aria-hidden="true">▤</span><strong>Tampilan Produk &amp; Stok</strong><small>assets/tokpos-stok.webp</small></div><img alt="Tampilan manajemen produk dan stok TOKPOS" hidden><button type="button" class="tp-image-open" hidden aria-label="Perbesar gambar Produk dan Stok"><span>⤢ Perbesar gambar</span></button></div>
             </div>
             <figcaption><strong>Barang &amp; Stok</strong> — kelola daftar produk dan pantau jumlah persediaan.</figcaption>
           </figure>
           <figure>
             <div class="tp-window"><div class="tp-titlebar"><span>▣ TOKPOS — Laporan</span><div class="tp-title-controls" aria-hidden="true"><span>—</span><span>□</span><span>×</span></div></div>
-              <div class="tp-screenshot" data-image="assets/tokpos-laporan.png"><div class="tp-shot-placeholder"><span class="tp-shot-icon" aria-hidden="true">▥</span><strong>Tampilan Laporan Penjualan</strong><small>assets/tokpos-laporan.webp</small></div><img alt="Tampilan laporan transaksi dan ringkasan usaha TOKPOS" hidden></div>
+              <div class="tp-screenshot" data-image="assets/tokpos-laporan.png"><div class="tp-shot-placeholder"><span class="tp-shot-icon" aria-hidden="true">▥</span><strong>Tampilan Laporan Penjualan</strong><small>assets/tokpos-laporan.webp</small></div><img alt="Tampilan laporan transaksi dan ringkasan usaha TOKPOS" hidden><button type="button" class="tp-image-open" hidden aria-label="Perbesar gambar Laporan TOKPOS"><span>⤢ Perbesar gambar</span></button></div>
             </div>
             <figcaption><strong>Laporan toko</strong> — pantau penjualan dan hasil usaha per periode.</figcaption>
           </figure>
@@ -211,6 +224,10 @@
           </aside>
         </div>
       </section>
+      <dialog class="tp-lightbox" id="tp-image-dialog" aria-labelledby="tp-image-dialog-title">
+        <div class="tp-lightbox-head"><span id="tp-image-dialog-title">Tampilan TOKPOS</span><button class="tp-lightbox-close" type="button" aria-label="Tutup gambar">✕ Tutup</button></div>
+        <img id="tp-image-dialog-img" alt="Screenshot TOKPOS dalam ukuran besar">
+      </dialog>
       <div class="tp-foot"><span>© Aulap Software • TOKPOS untuk toko kecil &amp; UMKM Indonesia</span><span>Butuh penjelasan? <a href="contact.html">Hubungi Aulap Software</a> · <a href="software.html">Software lainnya</a></span></div>
     </div>
   </main>
@@ -222,17 +239,45 @@
 (function () {
   'use strict';
   function loadScreenshots() {
+    var dialog = document.getElementById('tp-image-dialog');
+    var largeImage = document.getElementById('tp-image-dialog-img');
+    var dialogTitle = document.getElementById('tp-image-dialog-title');
+    var closeButton = dialog && dialog.querySelector('.tp-lightbox-close');
+    var canEnlarge = !!(dialog && typeof dialog.showModal === 'function' && largeImage && dialogTitle);
+
+    if (canEnlarge) {
+      closeButton.addEventListener('click', function () { dialog.close(); });
+      dialog.addEventListener('click', function (event) {
+        if (event.target === dialog) dialog.close();
+      });
+      dialog.addEventListener('close', function () { largeImage.removeAttribute('src'); });
+    }
+
     document.querySelectorAll('.tokpos-page .tp-screenshot[data-image]').forEach(function (frame) {
       var src = frame.getAttribute('data-image');
       var img = frame.querySelector('img');
       var placeholder = frame.querySelector('.tp-shot-placeholder');
+      var zoomButton = frame.querySelector('.tp-image-open');
       if (!src || !img) return;
       var loader = new Image();
       loader.onload = function () {
         img.src = src;
         img.hidden = false;
         if (placeholder) placeholder.hidden = true;
+        if (canEnlarge && zoomButton) zoomButton.hidden = false;
       };
+      loader.onerror = function () {
+        if (zoomButton) zoomButton.hidden = true;
+      };
+      if (canEnlarge && zoomButton) {
+        zoomButton.addEventListener('click', function () {
+          var windowTitle = frame.closest('.tp-window').querySelector('.tp-titlebar > span');
+          dialogTitle.textContent = windowTitle ? windowTitle.textContent : 'Tampilan TOKPOS';
+          largeImage.src = img.src;
+          largeImage.alt = img.alt;
+          dialog.showModal();
+        });
+      }
       loader.src = src;
     });
   }
