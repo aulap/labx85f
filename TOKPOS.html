@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b111c">
+  <meta name="theme-color" content="#f5f8fc">
   <title>TOKPOS – Aplikasi Kasir Offline untuk Toko Kecil &amp; UMKM | Aulap Software</title>
   <meta name="description" content="TOKPOS, aplikasi kasir offline Windows untuk toko kecil dan UMKM. Kelola penjualan, stok, pembelian, laporan laba, dan kas. Lisensi Rp299.000/tahun.">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -126,13 +126,133 @@
     .tokpos-page .tp-lightbox-close{border:1px solid #dce9f3;background:#d5e1ec;color:#15283a;padding:7px 13px;font:700 .88rem ui-monospace,Consolas,monospace;cursor:pointer;flex:none}
     .tokpos-page .tp-lightbox img{display:block;width:100%;height:auto;max-height:calc(94vh - 49px);object-fit:contain;background:#091522}
     @media(max-width:560px){.tokpos-page .tp-image-open span{padding:6px 9px;font-size:.72rem}.tokpos-page .tp-lightbox-head{font-size:.75rem;padding:8px 10px}.tokpos-page .tp-lightbox img{max-height:calc(94vh - 43px)}}
+
+    /* TOKPOS light edition — restricted to this HTML page only. Other Aulap pages stay unchanged. */
+    body.tokpos-light{background:#edf2f8;color:#1a2a40;color-scheme:light}
+    body.tokpos-light #app-window{background:#f7f9fc;color:#1a2a40;border-color:#bfcbd9}
+    body.tokpos-light #main.main-content{background:#f7f9fc;color:#1a2a40}
+    body.tokpos-light #main .pathbar{background:#e6edf6;color:#304c68;border-color:#c4d0df;box-shadow:none}
+    body.tokpos-light #main .pathbar .path-note{color:#526d87}
+    body.tokpos-light .tokpos-page{
+      --tp-panel:#fff;--tp-panel2:#f3f7fc;--tp-line:#c4d2e2;--tp-line2:#dce6f0;
+      --tp-text:#192a41;--tp-muted:#52677e;--tp-blue:#175d9c;--tp-mint:#217a68;--tp-yellow:#b85e00;
+      color:var(--tp-text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif
+    }
+    body.tokpos-light .tokpos-page a{color:#175d9c}
+    body.tokpos-light .tokpos-page a:focus-visible,
+    body.tokpos-light .tokpos-page button:focus-visible{outline-color:#c37714}
+    body.tokpos-light .tokpos-page h1,
+    body.tokpos-light .tokpos-page h2,
+    body.tokpos-light .tokpos-page h3{color:#172943}
+    body.tokpos-light .tokpos-page .tp-overline{color:#217a68}
+    body.tokpos-light .tokpos-page .tp-mark{color:#2068a9}
+    body.tokpos-light .tokpos-page .tp-window{
+      background:#fff;border:1px solid #b5c8dc;
+      box-shadow:inset 1px 1px #fff,inset -1px -1px #a5b4c6,5px 5px 0 rgba(43,76,113,.10)
+    }
+    body.tokpos-light .tokpos-page .tp-titlebar{
+      background:linear-gradient(90deg,#24538d 0%,#356da4 55%,#5182ab 100%);
+      border-bottom-color:#91b6d5;color:#fff
+    }
+    body.tokpos-light .tokpos-page .tp-title-controls span{
+      background:#f1f5fa;color:#1e3551;border-top-color:#fff;border-left-color:#fff;
+      border-right-color:#728aa5;border-bottom-color:#728aa5
+    }
+    body.tokpos-light .tokpos-page .tp-btn{
+      background:#fff;color:#1b5182!important;border-color:#9bb6ce;
+      box-shadow:inset 1px 1px #fff,inset -2px -2px #c0ccdb
+    }
+    body.tokpos-light .tokpos-page .tp-btn:hover{background:#edf5fe}
+    body.tokpos-light .tokpos-page .tp-btn-primary{
+      color:#fff!important;background:#235f9b;border-color:#204c7e;
+      box-shadow:inset 1px 1px #75a7d6,inset -2px -2px #123e6b
+    }
+    body.tokpos-light .tokpos-page .tp-btn-primary:hover{background:#174e86}
+    body.tokpos-light .tokpos-page .tp-label{color:#215b91;background:#eaf3fb;border-color:#bfd5e7}
+    body.tokpos-light .tokpos-page .tp-h1-sub{color:#213a54}
+    body.tokpos-light .tokpos-page .tp-lead{color:#4a5f75}
+    body.tokpos-light .tokpos-page .tp-traits li{color:#33516d;background:#edf4fb;border-color:#c4d8eb}
+    body.tokpos-light .tokpos-page .tp-demo-note{color:#566a7f}
+    body.tokpos-light .tokpos-page .tp-screen-main{background:#f1f5fa}
+    body.tokpos-light .tokpos-page .tp-screenshot{
+      background:radial-gradient(ellipse at 62% 20%,#fff 0%,#edf4fb 48%,#dbe7f3 100%)
+    }
+    body.tokpos-light .tokpos-page .tp-screenshot::before{
+      opacity:.55;
+      background-image:linear-gradient(#b8cee345 1px,transparent 1px),linear-gradient(90deg,#b8cee345 1px,transparent 1px)
+    }
+    body.tokpos-light .tokpos-page .tp-shot-icon{
+      border-color:#7699bd;background:#e8f2fa;color:#2d6ba0;box-shadow:4px 4px 0 #c6d4e3
+    }
+    body.tokpos-light .tokpos-page .tp-shot-placeholder strong{color:#294a6b}
+    body.tokpos-light .tokpos-page .tp-shot-placeholder small{color:#587994}
+    body.tokpos-light .tokpos-page .tp-screenshot img{background:#fff}
+    body.tokpos-light .tokpos-page .tp-heading p{color:#536c83}
+    body.tokpos-light .tokpos-page .tp-feature{
+      background:linear-gradient(180deg,#fff,#f8fbff);border-color:#c9d8e6;
+      box-shadow:0 3px 12px rgba(45,76,108,.045)
+    }
+    body.tokpos-light .tokpos-page .tp-feature::before{background:#3d83be}
+    body.tokpos-light .tokpos-page .tp-feature .tp-num{color:#376c9c}
+    body.tokpos-light .tokpos-page .tp-feature p{color:#50677d}
+    body.tokpos-light .tokpos-page .tp-gallery figcaption{color:#586f85}
+    body.tokpos-light .tokpos-page .tp-gallery figcaption strong{color:#1e3853}
+    body.tokpos-light .tokpos-page .tp-panel{background:#fff;border-color:#cbd8e5;box-shadow:0 3px 12px rgba(37,75,116,.045)}
+    body.tokpos-light .tokpos-page .tp-scope p{color:#52677b}
+    body.tokpos-light .tokpos-page .tp-scope .tp-panel:first-child{border-left-color:#3a7bb6}
+    body.tokpos-light .tokpos-page .tp-scope .tp-panel:last-child{border-left-color:#369c82}
+    body.tokpos-light .tokpos-page .tp-offer-main{
+      background:linear-gradient(145deg,#e7f2fd 0%,#f5f9ff 70%,#fff 100%);
+      border-color:#a8c5e2;box-shadow:0 5px 18px rgba(33,80,129,.07)
+    }
+    body.tokpos-light .tokpos-page .tp-offer-main .tp-price{color:#173f69}
+    body.tokpos-light .tokpos-page .tp-offer-main .tp-price span{color:#58738e}
+    body.tokpos-light .tokpos-page .tp-offer-main p{color:#516981}
+    body.tokpos-light .tokpos-page .tp-offer-main ul{color:#29425c}
+    body.tokpos-light .tokpos-page .tp-offer-side{background:#fff;border-color:#c4d4e5;box-shadow:0 3px 14px rgba(37,75,116,.045)}
+    body.tokpos-light .tokpos-page .tp-offer-side p{color:#526a80}
+    body.tokpos-light .tokpos-page .tp-demo-steps li{color:#3e5973}
+    body.tokpos-light .tokpos-page .tp-demo-steps li::before{background:#dbeafa;color:#1c5386;border-color:#9dbdd9}
+    body.tokpos-light .tokpos-page .tp-spec{border-top-color:#c7d9ea;color:#5e758b}
+    body.tokpos-light .tokpos-page .tp-spec strong{color:#26435e}
+    body.tokpos-light .tokpos-page .tp-foot{border-top-color:#cbd8e7;color:#5c7082}
+    body.tokpos-light .tokpos-page .tp-foot a{color:#175d9c}
+    body.tokpos-light .tokpos-page .tp-image-open span{background:rgba(25,58,92,.91);border-color:#a5cae8;color:#fff}
+    body.tokpos-light .tokpos-page .tp-image-open:hover span{background:#235e94}
+    body.tokpos-light .tokpos-page .tp-image-open:focus-visible{outline-color:#c37714}
+    body.tokpos-light .tokpos-page .tp-lightbox{background:#fff;border-color:#aac2d9;color:#173451;box-shadow:0 30px 90px #0008}
+    body.tokpos-light .tokpos-page .tp-lightbox::backdrop{background:rgba(17,31,48,.80)}
+    body.tokpos-light .tokpos-page .tp-lightbox-head{background:linear-gradient(90deg,#24538d,#3c75ac);border-bottom-color:#91b6d5;color:#fff}
+    body.tokpos-light .tokpos-page .tp-lightbox-close{background:#f5f9ff;color:#214466;border-color:#d1e0ec}
+    
+    body.tokpos-light .tokpos-page .tp-lightbox img{background:#fff}
+    /* Area konten utama */
+body.tokpos-light #app-window,
+body.tokpos-light #main.main-content {
+  background: #E8EBE9;
+}
+
+/* Kartu fitur dan panel */
+body.tokpos-light .tokpos-page .tp-feature {
+  background: #F2F4F1;
+}
+
+body.tokpos-light .tokpos-page .tp-panel,
+body.tokpos-light .tokpos-page .tp-offer-side {
+  background: #F2F4F1;
+}
+
+/* Frame screenshot */
+body.tokpos-light .tokpos-page .tp-window {
+  background: #F2F4F1;
+}
   </style>
   <script src="assets/cyber-history.js" defer></script>
   <script src="assets/includes.js" defer></script>
   <script src="assets/site.js" defer></script>
   <script src="assets/cyber-ui.js" defer></script>
 </head>
-<body>
+<body class="tokpos-light">
 <a class="skip-link" href="#main">Lewati ke konten</a>
 <div data-include="includes/desktop.html"></div>
 <div class="main-window" id="app-window">
@@ -149,7 +269,7 @@
             <li>Desktop Windows 10/11 64-bit</li><li>Offline &amp; data lokal</li><li>1 PC untuk 1 toko</li>
           </ul>
           <div class="tp-buttons">
-            <a id="tp-download-demo" class="tp-btn tp-btn-primary" href="downloads/TOKPOS-1.0.0-Demo-Setup.exe" download>Download Demo</a>
+            <a id="tp-download-demo" class="tp-btn tp-btn-primary" href="https://drive.google.com/uc?export=download&id=1_tSlm_MqfCXqtQwt2J-fOdX4nM4ZcO7h" download>Download Demo</a>
             <a class="tp-btn" href="#harga">Lihat Harga Lisensi</a>
           </div>
           <p class="tp-demo-note" id="tp-demo-status">Demo bersifat read-only: lihat antarmuka dan informasi, tanpa membuat transaksi atau mengubah data. Aktivasi diperlukan untuk penggunaan penuh.</p>
@@ -259,7 +379,7 @@
       </section>
 
       <section class="tp-section" id="harga" aria-labelledby="tp-price-title">
-        <div class="tp-heading"><div><span class="tp-overline">Harga transparan untuk UMKM</span><h2 id="tp-price-title">Harga Lisensi</h2></div></div>
+        <div class="tp-heading"><div><span class="tp-overline">Harga transparan untuk UMKM</span><h2 id="tp-price-title">Harga Lisensi &amp; Demo Read-Only</h2></div></div>
         <div class="tp-offer">
           <article class="tp-offer-main">
             <span class="tp-overline">Lisensi TOKPOS Desktop • 1 Perangkat</span>
@@ -274,7 +394,7 @@
               <p>Kenali tampilan kasir, stok, pembelian, dan laporan sebelum membeli. Mode demo hanya untuk melihat; transaksi dan perubahan data tidak dapat disimpan.</p>
               <ol class="tp-demo-steps"><li>Download dan instal TOKPOS pada komputer Windows 64-bit.</li><li>Buka aplikasi dalam mode Demo (Read-Only).</li><li>Jelajahi menu dan informasi yang tersedia tanpa melakukan transaksi atau mengubah data.</li></ol>
             </div>
-            <div><a id="tp-demo-secondary" class="tp-btn" href="downloads/TOKPOS-1.0.0-Demo-Setup.exe" download>Download Demo</a><p class="tp-muted" style="font-size:.79rem;margin-top:9px">Untuk mencatat transaksi, mengelola stok, dan menyimpan perubahan, gunakan lisensi TOKPOS aktif.</p></div>
+            <div><a id="tp-demo-secondary" class="tp-btn" href="https://drive.google.com/uc?export=download&id=1_tSlm_MqfCXqtQwt2J-fOdX4nM4ZcO7h" download>Download Demo</a><p class="tp-muted" style="font-size:.79rem;margin-top:9px">Untuk mencatat transaksi, mengelola stok, dan menyimpan perubahan, gunakan lisensi TOKPOS aktif.</p></div>
           </aside>
         </div>
       </section>
