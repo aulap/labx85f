@@ -25,7 +25,6 @@
   <meta name="twitter:image" content="https://aulap.my.id/assets/aar-connect-scan.png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="preload" href="assets/aar-connect-scan.png" as="image" type="image/png">
   <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"Aulap Android Rescue","softwareVersion":"1.0.0","applicationCategory":"SecurityApplication","operatingSystem":"Microsoft Windows 64-bit","description":"Aplikasi desktop Windows untuk memeriksa aplikasi Android, meninjau izin dan akses khusus, mengevaluasi indikator keamanan, dan membuat laporan pemeriksaan melalui USB.","url":"https://aulap.my.id/AulapAndroidRescue.html","image":"https://aulap.my.id/assets/aar-connect-scan.png","publisher":{"@type":"Organization","name":"Aulap Software","url":"https://aulap.my.id/"},"isAccessibleForFree":true,"offers":[{"@type":"Offer","name":"Free","price":"0","priceCurrency":"IDR"},{"@type":"Offer","name":"Pro Tahunan (12 bulan)","price":"199000","priceCurrency":"IDR","url":"https://aulap.my.id/contact.html"},{"@type":"Offer","name":"Pro Lifetime","price":"499000","priceCurrency":"IDR","url":"https://aulap.my.id/contact.html"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://aulap.my.id/"},{"@type":"ListItem","position":2,"name":"Software","item":"https://aulap.my.id/software.html"},{"@type":"ListItem","position":3,"name":"Aulap Android Rescue","item":"https://aulap.my.id/AulapAndroidRescue.html"}]}]}</script>
   <style>
     /* Product styles aligned with the shared Aulap Software dark desktop shell. */
@@ -54,6 +53,13 @@
     .aar-page .tq-shot img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;display:block;background:#0b1828}
     .aar-page .tq-shot:hover{border-color:#a5dce8}
     .aar-page .tq-hero-shot small{display:block;padding:12px 15px;color:#c4d7e7;font-size:.81rem}
+
+    .aar-page .aar-hero-video{border:1px solid #446b88;background:#0e1b2b;box-shadow:0 13px 34px #0004;min-width:0;overflow:hidden}
+    .aar-page .aar-video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#081525}
+    .aar-page .aar-video-frame iframe{display:block;position:absolute;inset:0;width:100%;height:100%;border:0}
+    .aar-page .aar-video-caption{padding:12px 15px;color:#c4d7e7;font-size:.81rem;line-height:1.6}
+    .aar-page .aar-video-caption a{color:#a5e0f0;text-decoration:underline;text-underline-offset:3px}
+    .aar-page .aar-video-caption a:hover{color:#d3f6ff}
     .aar-page .tq-statline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:14px}
     .aar-page .tq-statline span{display:block;padding:12px 13px;border:1px solid #2c4b61;background:#112238;color:#bed5e6;font-size:.73rem;line-height:1.5}
     .aar-page .tq-statline strong{display:block;font-size:.82rem;margin-bottom:2px;color:#e5f5fe}
@@ -201,11 +207,19 @@ body .main-content.product-page{max-width:1530px;padding:clamp(20px,3vw,48px);ma
           <p class="tq-hero-note"><span class="aar-micro"><span class="aar-glow" aria-hidden="true"></span> Windows 64-bit &nbsp;·&nbsp; Koneksi USB &nbsp;·&nbsp; Versi 1.0.0</span></p>
         </div>
         <div class="tq-hero-visual">
-          <button class="tq-shot tq-hero-shot" type="button" data-tq-shot="assets/aar-connect-scan.png" data-tq-title="Hubungkan &amp; Scan — Aulap Android Rescue" aria-label="Perbesar screenshot Hubungkan dan Scan">
-            <span class="tq-shot-head"><span>▣ &nbsp; AULAP ANDROID RESCUE / CONNECT &amp; SCAN</span><span aria-hidden="true">─ □ ×</span></span>
-            <img src="assets/aar-connect-scan.png" width="1366" height="728" alt="Tampilan Aulap Android Rescue saat memindai aplikasi Android" fetchpriority="high">
-            <small>Hubungkan perangkat, pilih cakupan pemeriksaan, dan mulai scan.</small>
-          </button>
+          <div class="aar-hero-video" aria-label="Video demonstrasi Aulap Android Rescue">
+            <div class="tq-shot-head"><span>▶ &nbsp; AULAP ANDROID RESCUE / VIDEO DEMO</span><span aria-hidden="true">─ □ ×</span></div>
+            <div class="aar-video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/abOyRYcAp0g?autoplay=1&amp;mute=1&amp;playsinline=1&amp;rel=0"
+                title="Demonstrasi Aulap Android Rescue: pemeriksaan keamanan hingga uninstall aplikasi Android"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="eager"
+                allowfullscreen></iframe>
+            </div>
+            <div class="aar-video-caption">Lihat proses scan, peninjauan temuan, hingga uninstall aplikasi mencurigakan. <a href="https://youtu.be/abOyRYcAp0g" target="_blank" rel="noopener noreferrer">Tonton di YouTube ↗</a></div>
+          </div>
           <div class="tq-statline">
             <span><strong>Scan Terarah</strong>Periksa aplikasi yang relevan</span>
             <span><strong>Detail Temuan</strong>Izin dan indikator keamanan</span>
