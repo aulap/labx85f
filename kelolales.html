@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b111c">
+  <title>KelolaLes – Aplikasi Administrasi PAUD, TK, Bimbel & Kursus | Aulap Software</title>
+  <meta name="description" content="KelolaLes adalah aplikasi administrasi pembayaran dan keuangan untuk PAUD hingga TK, bimbingan belajar, tempat les, dan lembaga kursus. Catat peserta, program, tagihan SPP, pembayaran, pengeluaran, kas, bank, dan laporan keuangan." />
+  <meta name="keywords" content="KelolaLes, aplikasi administrasi PAUD, software PAUD, aplikasi keuangan PAUD, aplikasi pembayaran SPP PAUD, aplikasi administrasi TK, aplikasi pembayaran SPP TK, aplikasi administrasi bimbel, aplikasi bimbingan belajar, software tempat les, aplikasi administrasi kursus, aplikasi pembayaran kursus, aplikasi tagihan peserta didik, aplikasi keuangan lembaga pendidikan, aplikasi paket sesi les, laporan keuangan bimbel" />
+  <meta name="author" content="Aulap Software">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://aulap.my.id/kelolales.html">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="KelolaLes – Aplikasi Administrasi PAUD, TK, Bimbel & Kursus">
+  <meta property="og:description" content="Kelola administrasi peserta didik, tagihan SPP, pembayaran, paket sesi, pengeluaran, kas/bank, dan laporan keuangan untuk PAUD, TK, bimbel, dan lembaga kursus." />
+  <meta property="og:url" content="https://aulap.my.id/kelolales.html">
+  <meta property="og:site_name" content="Aulap Software">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:image" content="https://aulap.my.id/assets/kelolales-dashboard.webp">
+  <meta property="og:image:secure_url" content="https://aulap.my.id/assets/kelolales-dashboard.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:alt" content="Dashboard KelolaLes untuk administrasi PAUD, TK, bimbingan belajar, dan kursus">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KelolaLes – Aplikasi Administrasi PAUD, TK, Bimbel & Kursus">
+  <meta name="twitter:description" content="Aplikasi Windows untuk administrasi peserta, SPP, tagihan, pembayaran, dan keuangan lembaga pendidikan." />
+  <meta name="twitter:image" content="https://aulap.my.id/assets/kelolales-dashboard.webp">
+  <meta name="twitter:image:alt" content="Dashboard aplikasi KelolaLes">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/product-details.css">
+
+  <style>
+    /* Product-only styles. Header, site navigation, desktop shell and footer use Aulap shared includes. */
+    .product-page .kl-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .product-page .kl-shot{display:block;min-width:0;padding:10px;background:#142338;border:1px solid #455d7a;text-decoration:none;color:inherit;transition:border-color .18s ease,transform .18s ease}
+    .product-page .kl-shot:hover{border-color:#9ec5f1;transform:translateY(-2px)}
+    .product-page .kl-shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#0b1420;border:1px solid #344a63}
+    .product-page .kl-shot strong{display:block;color:#eef5ff;font-size:13px;margin:10px 2px 3px}
+    .product-page .kl-shot span{display:block;color:#b5c7dc;font-size:11px;line-height:1.65;margin:0 2px 2px}
+    .product-page .kl-workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    .product-page .kl-step{padding:16px 15px;background:#142338;border:1px solid #455d7a}
+    .product-page .kl-step small{display:block;color:#efd18d;font:700 10px/1.5 'Courier New',monospace;letter-spacing:.06em}
+    .product-page .kl-step h3{margin:9px 0 6px;color:#eff5ff;font-size:15px}
+    .product-page .kl-step p{margin:0;color:#b5c7dc;font-size:12px;line-height:1.7}
+    .product-page .kl-price-card{max-width:620px;margin:0 auto;padding:28px;background:#142338;border:2px solid;border-color:#9ec5f1 #234977 #234977 #9ec5f1;text-align:center}
+    .product-page .kl-price-card .kl-price{margin:9px 0 3px;color:#f1f6ff;font:800 clamp(34px,4vw,48px)/1.2 system-ui,-apple-system,'Segoe UI',sans-serif;letter-spacing:-.04em}
+    .product-page .kl-price-card .kl-price-note{color:#c9d6e8;font-size:12px;margin:0 0 18px}
+    .product-page .kl-price-card ul{display:inline-block;text-align:left;margin:0 auto 20px;padding-left:19px;color:#c9d6e8;font-size:12px;line-height:1.9}
+    .product-page .kl-price-card .button{min-width:min(100%,260px)}
+    .product-page .kl-price-footnote{margin:12px 0 0;color:#aebed2;font-size:11px;line-height:1.7}
+    .product-page .kl-audience{padding:20px 22px;background:#192e48;border:1px solid #507195;margin-top:17px}
+    .product-page .kl-audience h3{margin:0 0 9px;color:#e7f1ff;font-size:16px}
+    .product-page .kl-audience p{font-size:12px;line-height:1.8;color:#bdcde0;margin:0}
+    .product-page .kl-lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(2,8,17,.94)}
+    .product-page .kl-lightbox.open{display:flex}
+    .product-page .kl-lightbox figure{position:relative;max-width:min(1200px,96vw);max-height:92vh;margin:0;text-align:center}
+    .product-page .kl-lightbox img{display:block;max-width:100%;max-height:82vh;margin:auto;object-fit:contain;border:1px solid #52677f;background:#0b1420}
+    .product-page .kl-lightbox figcaption{color:#d6e2f0;font-size:12px;margin-top:10px}
+    .product-page .kl-lightbox button{position:absolute;top:-42px;right:0;width:36px;height:36px;border:1px solid #647891;background:#17283d;color:white;font-size:24px;cursor:pointer}
+    .product-page #harga,.product-page #fitur,.product-page #screenshot,.product-page #alur,.product-page #faq,.product-page #overview{scroll-margin-top:22px}
+    @media(max-width:880px){.product-page .kl-workflow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.product-page .kl-gallery{grid-template-columns:1fr}.product-page .kl-workflow{grid-template-columns:1fr}.product-page .kl-price-card{padding:22px 17px}.product-page .kl-audience{padding:17px}}
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"SoftwareApplication",
+        "@id":"https://aulap.my.id/kelolales.html#software",
+        "name":"KelolaLes",
+        "applicationCategory":"BusinessApplication",
+        "applicationSubCategory":"Education Administration Software",
+        "operatingSystem":"Windows",
+        "url":"https://aulap.my.id/kelolales.html",
+        "description":"Aplikasi desktop Windows untuk administrasi pembayaran dan keuangan PAUD, TK, bimbingan belajar, tempat les, dan lembaga kursus. Mengelola data peserta, program, pendaftaran, tagihan, pembayaran, pengeluaran, kas, bank, dan laporan keuangan.",
+        "image":"https://aulap.my.id/assets/kelolales-dashboard.webp",
+        "publisher":{"@type":"Organization","name":"Aulap Software","url":"https://aulap.my.id/"},
+        "featureList":[
+          "Data peserta didik dan peserta les",
+          "Program belajar dan pendaftaran",
+          "Tagihan dan pembayaran bulanan, tahunan, dan paket sesi",
+          "Pencatatan saldo prabayar dan riwayat sesi",
+          "Pengeluaran operasional, kas, dan bank",
+          "Laporan keuangan",
+          "Backup dan restore database"
+        ],
+        "offers":{
+          "@type":"Offer",
+          "price":"399000",
+          "priceCurrency":"IDR",
+          "url":"https://aulap.my.id/kelolales.html#harga",
+          "availability":"https://schema.org/InStock",
+          "description":"Lisensi satu PC, pembayaran sekali bayar."
+        }
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Beranda","item":"https://aulap.my.id/"},
+          {"@type":"ListItem","position":2,"name":"Software Library","item":"https://aulap.my.id/software.html"},
+          {"@type":"ListItem","position":3,"name":"KelolaLes","item":"https://aulap.my.id/kelolales.html"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"KelolaLes cocok untuk lembaga apa?",
+            "acceptedAnswer":{"@type":"Answer","text":"KelolaLes dapat digunakan mulai dari PAUD hingga TK, serta bimbingan belajar, tempat les, dan lembaga kursus. Fitur utamanya membantu pencatatan peserta didik, program, pendaftaran, tagihan, pembayaran, pengeluaran, kas dan bank, serta laporan keuangan."}
+          },
+          {
+            "@type":"Question",
+            "name":"Apakah KelolaLes bisa digunakan untuk administrasi SPP PAUD dan TK?",
+            "acceptedAnswer":{"@type":"Answer","text":"Bisa. KelolaLes dapat digunakan untuk mencatat tagihan dan pembayaran bulanan seperti SPP, biaya program, maupun pembayaran tahunan sesuai pengaturan lembaga."}
+          },
+          {
+            "@type":"Question",
+            "name":"Apakah KelolaLes menggunakan biaya langganan?",
+            "acceptedAnswer":{"@type":"Answer","text":"Tidak. Harga lisensi KelolaLes adalah Rp399.000 sekali bayar untuk penggunaan pada satu PC."}
+          },
+          {
+            "@type":"Question",
+            "name":"Jenis pembayaran apa yang dapat dikelola?",
+            "acceptedAnswer":{"@type":"Answer","text":"KelolaLes mendukung program dengan skema pembayaran bulanan, tahunan, dan paket sesi."}
+          },
+          {
+            "@type":"Question",
+            "name":"Apakah KelolaLes merupakan aplikasi akademik dengan absensi dan rapor?",
+            "acceptedAnswer":{"@type":"Answer","text":"KelolaLes berfokus pada administrasi peserta, program, tagihan, pembayaran, serta keuangan lembaga. Aplikasi ini bukan sistem akademik untuk absensi kelas, penilaian, atau penerbitan rapor."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script src="assets/cyber-history.js" defer></script>
+  <script src="assets/includes.js" defer></script>
+  <script src="assets/site.js" defer></script>
+  <script src="assets/cyber-ui.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div data-include="includes/desktop.html"></div>
+  <div class="main-window" id="app-window">
+    <div data-include="includes/header.html"></div>
+    <main class="main-content product-page" id="main">
+      <div class="pathbar"><span>▣ &nbsp; C:\AULAP\KELOLLES.HTML</span><span class="path-note">AULAP SOFTWARE</span></div>
+
+      <section class="page-intro" aria-labelledby="product-title">
+        <span class="kicker">EDUCATION PAYMENT &amp; FINANCE ADMINISTRATION</span>
+        <h1 id="product-title">KelolaLes</h1>
+        <p class="detail-subtitle">Aplikasi Administrasi Pembayaran dan Keuangan untuk PAUD, TK, Bimbel, dan Kursus</p>
+        <p class="product-lead">KelolaLes membantu PAUD hingga TK, bimbingan belajar, tempat les, dan lembaga kursus merapikan administrasi peserta dan keuangan. Catat data peserta didik, program belajar, pendaftaran, tagihan SPP atau biaya kursus, pembayaran, pengeluaran, kas, bank, hingga laporan keuangan dalam satu aplikasi desktop Windows.</p>
+        <div class="detail-tags"><span>Administrasi PAUD &amp; TK</span><span>Tagihan &amp; Pembayaran</span><span>Keuangan Bimbel &amp; Kursus</span></div>
+        <div class="actions spaced-actions">
+          <a class="button primary" href="#harga">Lihat Harga &amp; Download Demo</a>
+          <a class="button" href="#screenshot">Lihat Screenshot</a>
+        </div>
+        <div class="hero-facts"><span><strong>Platform:</strong> Windows Desktop</span><span><strong>Lisensi:</strong> Satu PC</span><span><strong>Harga:</strong> Rp399.000 sekali bayar</span></div>
+      </section>
+
+      <nav class="detail-shortcuts" aria-label="Navigasi detail KelolaLes">
+        <span>LIHAT:</span><a href="#overview">Ringkasan</a><a href="#fitur">Fitur</a><a href="#screenshot">Screenshot</a><a href="#alur">Alur Penggunaan</a><a href="#harga">Harga &amp; Demo</a><a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="detail-top">
+        <article class="dark-panel" id="overview">
+          <div class="panel-head"><span>▣ &nbsp; Product Overview</span><span class="panel-controls" aria-hidden="true">─ &nbsp; □ &nbsp; ×</span></div>
+          <div class="panel-content">
+            <h2>Satu Aplikasi untuk Administrasi dan Keuangan Lembaga</h2>
+            <p>Administrasi lembaga pendidikan tidak berhenti pada pencatatan nama peserta. Pengelola juga perlu mengetahui program yang diikuti, biaya yang harus dibayar, pembayaran yang sudah diterima, serta pengeluaran operasional. KelolaLes menyatukan pekerjaan administrasi tersebut agar data peserta, tagihan, pembayaran, dan laporan keuangan lebih mudah diperiksa.</p>
+            <h2>Untuk PAUD, TK, Tempat Les, dan Bimbel</h2>
+            <p>Untuk PAUD dan TK, KelolaLes dapat membantu mencatat peserta didik, program, serta tagihan dan pembayaran bulanan seperti SPP maupun pembayaran tahunan. Untuk bimbingan belajar dan kursus, tersedia pengelolaan program bulanan, tahunan, dan paket sesi sesuai kebutuhan layanan.</p>
+          </div>
+        </article>
+        <aside class="dark-panel detail-preview">
+          <div class="panel-head"><span>▣ &nbsp; KelolaLes Dashboard</span><span class="panel-controls" aria-hidden="true">─ &nbsp; □ &nbsp; ×</span></div>
+          <div class="image-panel"><img src="assets/kelolales-dashboard.webp" alt="Dashboard aplikasi KelolaLes untuk memantau administrasi PAUD, TK, bimbel, dan kursus" loading="eager" decoding="async" fetchpriority="high" width="1600" height="900"></div>
+          <div class="caption-line">Dashboard KelolaLes — ringkasan administrasi lembaga</div>
+        </aside>
+      </div>
+
+      <section class="detail-section" id="fitur" aria-labelledby="fitur-title">
+        <h2 id="fitur-title">Fitur Administrasi PAUD, TK, Bimbel, dan Kursus</h2>
+        <div class="detail-feature-grid">
+          <article class="detail-feature"><span class="feature-index">01 / PESERTA</span><h3>Data Peserta Didik dan Peserta Les</h3><p>Simpan dan periksa data peserta sebagai dasar pendaftaran, penempatan program, penagihan, dan riwayat administrasi.</p></article>
+          <article class="detail-feature"><span class="feature-index">02 / PROGRAM</span><h3>Program dan Pendaftaran</h3><p>Atur program belajar, biaya, dan pendaftaran peserta. Riwayat pendaftaran membantu pengelola melihat program yang diikuti.</p></article>
+          <article class="detail-feature"><span class="feature-index">03 / TAGIHAN</span><h3>Tagihan SPP dan Biaya Kursus</h3><p>Kelola tagihan berkala untuk pembayaran bulanan atau tahunan, termasuk pencatatan tagihan yang belum dibayar.</p></article>
+          <article class="detail-feature"><span class="feature-index">04 / PEMBAYARAN</span><h3>Pencatatan Pembayaran</h3><p>Catat pembayaran yang diterima dan telusuri riwayat transaksi peserta agar status tagihan lebih mudah dipantau.</p></article>
+          <article class="detail-feature"><span class="feature-index">05 / PAKET SESI</span><h3>Paket Sesi dan Saldo Prabayar</h3><p>Kelola paket sesi untuk les atau kursus, termasuk pemakaian sesi dan saldo untuk layanan yang dibayar di muka.</p></article>
+          <article class="detail-feature"><span class="feature-index">06 / KEUANGAN</span><h3>Pengeluaran, Kas, dan Bank</h3><p>Catat biaya operasional lembaga dan pantau pergerakan dana melalui akun kas maupun rekening bank.</p></article>
+          <article class="detail-feature"><span class="feature-index">07 / LAPORAN</span><h3>Laporan Keuangan</h3><p>Tinjau penerimaan dan pengeluaran berdasarkan periode untuk membantu pemilik memantau kondisi keuangan lembaga.</p></article>
+          <article class="detail-feature"><span class="feature-index">08 / DATA</span><h3>Backup dan Restore</h3><p>Sediakan salinan database dan pulihkan data melalui menu Pengaturan saat diperlukan.</p></article>
+        </div>
+        <div class="kl-audience">
+          <h3>Administrasi untuk PAUD hingga TK</h3>
+          <p>KelolaLes dapat dipakai oleh pengelola PAUD dan Taman Kanak-Kanak yang membutuhkan aplikasi untuk data peserta didik, program, tagihan SPP, pembayaran bulanan atau tahunan, pencatatan biaya operasional, dan laporan keuangan. Fokusnya adalah administrasi pembayaran dan keuangan lembaga, bukan pengelolaan kurikulum atau penilaian akademik.</p>
+        </div>
+      </section>
+
+      <section class="detail-section" id="screenshot" aria-labelledby="screenshot-title">
+        <h2 id="screenshot-title">Screenshot Aplikasi KelolaLes</h2>
+        <p class="pr-price-intro">Lihat tampilan modul utama KelolaLes, mulai dari dashboard dan data peserta hingga tagihan, pembayaran, paket sesi, keuangan, dan laporan.</p>
+        <div class="kl-gallery">
+          <a class="kl-shot" href="assets/kelolales-peserta.webp" data-lightbox data-caption="Data Peserta — pencatatan peserta didik dan peserta les"><img src="assets/kelolales-peserta.webp" alt="Screenshot data peserta didik dan peserta les di KelolaLes" loading="lazy" width="1600" height="900"><strong>Data Peserta</strong><span>Daftar peserta dan informasi administrasi.</span></a>
+          <a class="kl-shot" href="assets/kelolales-program.webp" data-lightbox data-caption="Program — pengaturan program belajar dan pendaftaran"><img src="assets/kelolales-program.webp" alt="Screenshot program belajar dan pendaftaran peserta di KelolaLes" loading="lazy" width="1600" height="900"><strong>Program dan Pendaftaran</strong><span>Pengelolaan program belajar dan pendaftaran peserta.</span></a>
+          <a class="kl-shot" href="assets/kelolales-tagihan.webp" data-lightbox data-caption="Tagihan — daftar tagihan peserta"><img src="assets/kelolales-tagihan.webp" alt="Screenshot tagihan SPP dan biaya kursus peserta di KelolaLes" loading="lazy" width="1600" height="900"><strong>Tagihan</strong><span>Pemantauan tagihan bulanan, tahunan, dan status pembayaran.</span></a>
+          <a class="kl-shot" href="assets/kelolales-pembayaran.webp" data-lightbox data-caption="Pembayaran — pencatatan penerimaan peserta"><img src="assets/kelolales-pembayaran.webp" alt="Screenshot pencatatan pembayaran peserta di KelolaLes" loading="lazy" width="1600" height="900"><strong>Pembayaran</strong><span>Riwayat pembayaran dan penerimaan dari peserta.</span></a>
+          <a class="kl-shot" href="assets/kelolales-paket-sesi.webp" data-lightbox data-caption="Paket Sesi — pengelolaan saldo dan pemakaian sesi"><img src="assets/kelolales-paket-sesi.webp" alt="Screenshot pengelolaan paket sesi dan saldo prabayar di KelolaLes" loading="lazy" width="1600" height="900"><strong>Paket Sesi</strong><span>Saldo prabayar dan pemakaian sesi untuk les atau kursus.</span></a>
+          <a class="kl-shot" href="assets/kelolales-keuangan.webp" data-lightbox data-caption="Keuangan — pengeluaran, kas, dan bank"><img src="assets/kelolales-keuangan.webp" alt="Screenshot pencatatan pengeluaran, kas, dan bank KelolaLes" loading="lazy" width="1600" height="900"><strong>Pengeluaran dan Kas/Bank</strong><span>Pencatatan biaya operasional serta akun kas dan bank.</span></a>
+          <a class="kl-shot" href="assets/kelolales-laporan.webp" data-lightbox data-caption="Laporan Keuangan — ringkasan penerimaan dan pengeluaran"><img src="assets/kelolales-laporan.webp" alt="Screenshot laporan keuangan PAUD, TK, bimbel, dan kursus pada KelolaLes" loading="lazy" width="1600" height="900"><strong>Laporan Keuangan</strong><span>Tinjau penerimaan dan pengeluaran lembaga berdasarkan periode.</span></a>
+        </div>
+      </section>
+
+      <section class="detail-section" id="alur" aria-labelledby="alur-title">
+        <h2 id="alur-title">Bagaimana KelolaLes Digunakan?</h2>
+        <p class="pr-price-intro">KelolaLes membantu menghubungkan proses pendaftaran dengan penagihan, pembayaran, dan pencatatan keuangan lembaga.</p>
+        <div class="kl-workflow">
+          <article class="kl-step"><small>LANGKAH 01</small><h3>Atur Program</h3><p>Siapkan program belajar dan jenis pembayaran yang digunakan lembaga.</p></article>
+          <article class="kl-step"><small>LANGKAH 02</small><h3>Daftarkan Peserta</h3><p>Masukkan data peserta didik atau peserta les, lalu catat program yang diikuti.</p></article>
+          <article class="kl-step"><small>LANGKAH 03</small><h3>Kelola Tagihan</h3><p>Terbitkan tagihan dan catat pembayaran bulanan, tahunan, atau paket sesi.</p></article>
+          <article class="kl-step"><small>LANGKAH 04</small><h3>Pantau Keuangan</h3><p>Catat pengeluaran, periksa akun kas/bank, dan tinjau laporan keuangan.</p></article>
+        </div>
+      </section>
+
+      <section class="detail-section" id="harga" aria-labelledby="harga-title">
+        <h2 id="harga-title">Harga Lisensi KelolaLes</h2>
+        <p class="pr-price-intro">KelolaLes tersedia dengan lisensi sekali bayar untuk satu PC. Tidak menggunakan biaya langganan bulanan.</p>
+        <div class="kl-price-card">
+          <span class="pr-plan-label">LISENSI SATU PC</span>
+          <p class="kl-price">Rp399.000</p>
+          <p class="kl-price-note">Sekali bayar untuk lisensi satu PC</p>
+          <ul>
+            <li>Administrasi peserta dan program belajar</li>
+            <li>Tagihan dan pencatatan pembayaran</li>
+            <li>Program bulanan, tahunan, dan paket sesi</li>
+            <li>Pengeluaran, kas/bank, dan laporan keuangan</li>
+            <li>Backup dan restore database</li>
+          </ul>
+          <!-- Ganti placeholder href di bawah dengan URL file demo KelolaLes saat sudah dipublikasikan. -->
+          <div><a class="button primary" id="download-demo" href="LINK_DOWNLOAD_DEMO_KelolaLes" target="_blank" rel="noopener noreferrer">Download Demo KelolaLes ↗</a></div>
+          <p class="kl-price-footnote"></p>
+        </div>
+      </section>
+
+      <section class="detail-section detail-faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Pertanyaan Umum tentang KelolaLes</h2>
+        <details><summary>KelolaLes cocok untuk lembaga apa?</summary><p>KelolaLes dapat digunakan mulai dari <strong>PAUD hingga TK</strong>, juga untuk bimbingan belajar, tempat les, dan lembaga kursus. Aplikasi ini membantu pengelola mencatat peserta didik, program, pendaftaran, tagihan, pembayaran, pengeluaran, kas/bank, dan laporan keuangan lembaga.</p></details>
+        <details><summary>Apakah KelolaLes bisa digunakan untuk administrasi SPP PAUD dan TK?</summary><p>Bisa. Tagihan bulanan seperti SPP, biaya program, serta pembayaran tahunan dapat dicatat sesuai pengaturan program dan lembaga.</p></details>
+        <details><summary>Apakah KelolaLes cocok untuk tempat les dan bimbingan belajar?</summary><p>Ya. KelolaLes dapat digunakan untuk administrasi peserta, program belajar, tagihan, pembayaran, serta paket sesi untuk layanan les atau kursus.</p></details>
+        <details><summary>Jenis pembayaran apa yang dapat dikelola?</summary><p>KelolaLes mendukung skema bulanan, tahunan, dan paket sesi. Paket sesi dapat digunakan untuk layanan yang pembayarannya dilakukan di muka dan pemakaiannya dicatat per sesi.</p></details>
+        <details><summary>Apakah KelolaLes menggunakan biaya langganan?</summary><p>Tidak. Harga lisensi KelolaLes adalah <strong>Rp399.000 sekali bayar</strong> untuk penggunaan pada satu PC.</p></details>
+        <details><summary>Apakah KelolaLes memiliki fitur absensi, penilaian, atau rapor?</summary><p>KelolaLes berfokus pada administrasi peserta, program, tagihan, pembayaran, dan keuangan lembaga. KelolaLes bukan aplikasi akademik untuk absensi kelas, penilaian, atau penerbitan rapor.</p></details>
+        <details><summary>Apakah data KelolaLes dapat di-backup?</summary><p>Ya. Menu Backup dan Restore tersedia melalui bagian Pengaturan untuk membuat dan memulihkan salinan database.</p></details>
+      </section>
+
+      <section class="detail-cta">
+        <div><h2>Rapikan Administrasi PAUD, TK, Bimbel, dan Kursus</h2><p>Kelola peserta, SPP, tagihan, pembayaran, dan keuangan lembaga melalui KelolaLes.</p></div>
+        <div class="actions"><a class="button primary" href="#harga">Lihat Harga &amp; Download Demo</a><a class="button" href="#screenshot">Lihat Screenshot</a></div>
+      </section>
+      <p class="pr-links"><a href="download-safety.html">Keamanan Unduhan</a> · <a href="terms-of-use.html">Ketentuan Penggunaan</a> · <a href="privacy-policy.html">Kebijakan Privasi</a></p>
+    </main>
+    <div data-include="includes/footer.html"></div>
+  </div>
+  <div data-include="includes/start-menu.html"></div>
+  <div data-include="includes/taskbar.html"></div>
+
+  <div class="kl-lightbox" id="kl-lightbox" role="dialog" aria-modal="true" aria-label="Pratinjau screenshot KelolaLes">
+    <figure><button type="button" aria-label="Tutup gambar">×</button><img src="" alt=""><figcaption></figcaption></figure>
+  </div>
+
+  <script>
+    (function () {
+      var box = document.getElementById('kl-lightbox');
+      var image = box.querySelector('img');
+      var caption = box.querySelector('figcaption');
+      var close = box.querySelector('button');
+      var lastFocus = null;
+      function closeBox() {
+        box.classList.remove('open');
+        image.removeAttribute('src');
+        document.body.style.overflow = '';
+        if (lastFocus) lastFocus.focus();
+      }
+      document.querySelectorAll('[data-lightbox]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          lastFocus = link;
+          image.src = link.getAttribute('href');
+          image.alt = link.querySelector('img') ? link.querySelector('img').alt : 'Screenshot KelolaLes';
+          caption.textContent = link.getAttribute('data-caption') || '';
+          box.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          close.focus();
+        });
+      });
+      close.addEventListener('click', closeBox);
+      box.addEventListener('click', function (event) { if (event.target === box) closeBox(); });
+      document.addEventListener('keydown', function (event) { if (event.key === 'Escape' && box.classList.contains('open')) closeBox(); });
+    })();
+  </script>
+</body>
+</html>
