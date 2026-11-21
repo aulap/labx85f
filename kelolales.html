@@ -31,6 +31,8 @@
 
   <style>
     /* Product-only styles. Header, site navigation, desktop shell and footer use Aulap shared includes. */
+    .product-page .detail-preview .kl-hero-shot{display:block;cursor:zoom-in;text-decoration:none}
+    .product-page .detail-preview .kl-hero-shot img{display:block;width:100%;height:auto;cursor:zoom-in}
     .product-page .kl-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
     .product-page .kl-shot{display:block;min-width:0;padding:10px;background:#142338;border:1px solid #455d7a;text-decoration:none;color:inherit;transition:border-color .18s ease,transform .18s ease}
     .product-page .kl-shot:hover{border-color:#9ec5f1;transform:translateY(-2px)}
@@ -188,7 +190,7 @@
         </article>
         <aside class="dark-panel detail-preview">
           <div class="panel-head"><span>▣ &nbsp; KelolaLes Dashboard</span><span class="panel-controls" aria-hidden="true">─ &nbsp; □ &nbsp; ×</span></div>
-          <div class="image-panel"><img src="assets/kelolales-dashboard.webp" alt="Dashboard KelolaLes untuk administrasi peserta, tagihan, pembayaran, dan keuangan tempat les serta bimbingan belajar" loading="eager" decoding="async" fetchpriority="high" width="1600" height="900"></div>
+          <div class="image-panel"><a class="kl-hero-shot" href="assets/kelolales-dashboard.webp" data-lightbox data-caption="Dashboard KelolaLes — ringkasan administrasi peserta, tagihan, pembayaran, dan keuangan" aria-label="Perbesar screenshot Dashboard KelolaLes"><img src="assets/kelolales-dashboard.webp" alt="Dashboard KelolaLes untuk administrasi peserta, tagihan, pembayaran, dan keuangan tempat les serta bimbingan belajar" loading="eager" decoding="async" fetchpriority="high" width="1600" height="900"></a></div>
           <div class="caption-line">Dashboard KelolaLes — ringkasan administrasi lembaga</div>
         </aside>
       </div>
